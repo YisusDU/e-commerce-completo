@@ -8,7 +8,7 @@ from .views import (
 
 # Create a router and register our viewsets with it.
 router = DefaultRouter()
-router.register("user-viewset", UserViewSet, basename="user-viewset") #<-- register the UserViewSet with the router
+router.register("users", UserViewSet, basename="users") #<-- register the UserViewSet with the router
 
 urlpatterns = [
     path("", ProductAPIView.as_view(), name="product-api"),
