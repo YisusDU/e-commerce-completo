@@ -1,0 +1,25 @@
+{% if alert_message %}
+    <script>
+        alert("{{ alert_message }}");
+    </script>
+{% endif %}
+<h1>
+    Registro de Usuario
+</h1>
+<form method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>
+            Datos de la cuenta
+        </legend>
+        {{ user_form.as_p }}
+    </fieldset>
+    <fieldset>
+        <legend>
+            Datos del usuario
+        </legend>
+        {{ billing_form.as_p }}
+        {{ address_form.as_p }}
+    </fieldset>
+    <button type="submit">Registrar</button>
+</form>
