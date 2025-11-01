@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createUser } from "../../redux/slices/userSlice";
-import { FormContaier, Form, Title, Label } from "./styled";
-import Input from "../ui/Input";
-import Button from "../ui/Button";
+import { FormContaier, Form, Title, Label, Input, Button } from "./styled";
 import { Link, useNavigate } from "react-router-dom";
+import { ASYNC_STATUS } from "../../constants/asyncStatus";
 
 const RegisterForm = () => {
   const [user, setUser] = useState("");
@@ -32,6 +31,7 @@ const RegisterForm = () => {
         <Title>Register</Title>
         <Label>User</Label>
         <Input
+          placeholder="Tu nombre de Usuario"
           type="text"
           value={user}
           onChange={(e) => setUser(e.target.value)}
@@ -39,6 +39,7 @@ const RegisterForm = () => {
         />
         <Label>Email</Label>
         <Input
+        placeholder="Añadetuemail@gmail.com"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -46,15 +47,17 @@ const RegisterForm = () => {
         />
         <Label>Password</Label>
         <Input
+          placeholder="Escribe tu contraseña"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <Label>confirm Password</Label>
+        <Label>Confirm Password</Label>
         <Input
-          type="pasword"
-          value={password}
+          placeholder="Escribe tu contraseña"
+          type="password"
+          value={confirmPassword}
           onChange={(e) => SetConfirmPassword(e.target.value)}
           required
         />

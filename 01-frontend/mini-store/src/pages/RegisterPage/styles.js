@@ -1,51 +1,8 @@
 import styled, { css } from "styled-components";
-import Theme from "../../theme/index";
+import Theme from "../../styles";
 import resgistryImg from '../../assets/img/registryImg.jpg'
+import { flexColumn, buttonBase, flexCenter, buttonHover, darkMode} from "../../styles/mixins"
 
-
-// Mixins
-const flexCenter = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const flexColumn = css`
-  ${flexCenter}
-  flex-direction: column;
-`;
-
-const buttonBase = css`
-  width: 80%;
-  margin-top: 10px;
-  padding: 12px 24px;
-  color: white;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-`;
-
-const buttonHover = (color, alpha = 0.3) => css`
-  @media (hover: hover) {
-    &:hover {
-      background-color: transparent;
-      color: ${color};
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(${color}, ${alpha});
-    }
-  }
-`;
-
-const darkMode = css`
-  @media (prefers-color-scheme: dark) {
-    background-color: #919191;
-    color: #fff;
-    p {
-      color: #fff;
-    }
-  }
-`;
 
 const RegistryContainer = styled.article`
     display: flex;
@@ -127,7 +84,7 @@ span{
     }
 `;
 
-const RegistryForm = styled.div`
+const RegistryContent = styled.div`
     width: 60%;
     height: 100%;
     ${flexColumn}
@@ -139,71 +96,6 @@ const RegistryForm = styled.div`
         font-size: 2em;
         margin-bottom: 10px;
         align-self: start;
-    }
-
-    form {
-        ${flexColumn}
-        gap: 15px;
-        width: 100%;
-        padding: 20px 0;
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            align-self: start;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-            &:focus {
-                outline: none;
-                border-color: #66afe9;
-                box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
-            }
-        }
-
-        button {
-           ${buttonBase}
-           background-color: rgb(167, 51, 40);
-           border: 2px solid rgb(167, 51, 40);
-           margin: 10px auto;
-
-           ${buttonHover('rgb(167, 51, 40)')}
-        }
-    }
-
-    label {
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-    .sign__in {
-        font-size: 1.1rem;
-        cursor: pointer;
-        color: rgba(0, 170, 255, 0.7);
-    }
-
-    button {
-        ${buttonBase}
-        background-color: #28a745;
-        border: 2px solid #28a745;
-
-        ${buttonHover('#28a745')}
-    }
-
-    ${darkMode}
-    @media (prefers-color-scheme: dark) {
-        .sign__in{
-            color: #fff;
-        }
-        @media (hover: hover) {
-            button:hover, form button:hover {
-                color: #fff;
-            }
-        }
     }
 
     @media (max-width: 768px) {
@@ -227,7 +119,7 @@ const RegistryImg = styled.div`
 
 
 export { 
-    RegistryForm, 
+    RegistryContent, 
     RegistryImg, 
     RegistryContainer, 
     RegistryLogo,

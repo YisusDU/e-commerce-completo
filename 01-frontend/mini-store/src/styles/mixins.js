@@ -31,6 +31,16 @@ const buttonHover = css`
   }
 `;
 
+const darkMode = css`
+  @media (prefers-color-scheme: dark) {
+    background-color: #919191;
+    color: #fff;
+    p {
+      color: #fff;
+    }
+  }
+`;
+
 const darkModeText = css`
   @media (prefers-color-scheme: dark) {
     color: #fff;
@@ -41,4 +51,4 @@ const darkModeText = css`
   }
 `;
 
-export { flexColumn, buttonBase, flexCenter, buttonHover, darkModeText };
+export { flexColumn, buttonBase, flexCenter, buttonHover, darkModeText, darkMode };

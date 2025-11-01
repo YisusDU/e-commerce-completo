@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../redux/slices/userSlice";
-import { LoginFieldset, LoginFormContainer } from "./styles";
+import { LoginFieldset, LoginFormContainer } from "./styled";
 import Input from "../ui/Input";
 import Button from "../ui/Button";
 import { Link, useNavigate } from "react-router-dom";

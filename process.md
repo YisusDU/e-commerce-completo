@@ -776,3 +776,264 @@ Noté que podríamos establecer diseños para que se respetara mejor el tamaño 
 ```
 
 ## RegisterPage
+
+Descomentamos RegisterPage del router
+
+- \e-commerce-completo\01-frontend\mini-store\src\router\AppRouter.js
+
+```js 
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
+// import HomePage from "../pages/HomePage";
+// import CartPage from "../pages/CartPage";
+// import CheckoutPage from "../pages/CheckoutPage";
+// import PostCheckoutPage from "../pages/PostCheckoutPage";
+
+const AppRouter = () => {
+  return (
+    <Router basename="/e-commerce-completo">
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+         <Route path="/register" element={<RegisterPage />} />
+        {/*<Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/post-checkout" element={<PostCheckoutPage />} /> */}
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRouter;
+
+```
+
+Y esta sería la base para el registerpage
+
+- \e-commerce-completo\01-frontend\mini-store\src\pages\RegisterPage\index.js
+
+```js
+import React from "react";
+import RegisterForm from "../../components/RegisterForm";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import logo from "../../assets/img/logoEcomm.jpg";
+import {
+  RegistryContent,
+  RegistryImg,
+  RegistryContainer,
+  RegistryLogo,
+  RegistryOptions,
+} from "./styles.js";
+
+const Registry = () => {
+  return (
+    <>
+      <RegistryContainer>
+        <RegistryOptions>
+          <RegistryContent>
+            <RegistryLogo>
+              <img src={logo} alt="logo-ecommerce" />
+              <span>Mini Store</span>
+            </RegistryLogo>
+            <RegisterForm />
+          </RegistryContent>
+          <RegistryImg />
+        </RegistryOptions>
+      </RegistryContainer>
+    </>
+  );
+};
+
+export default Registry;
+
+```
+
+Y el codigo del formulario de registro
+
+- \e-commerce-completo\01-frontend\mini-store\src\components\RegisterForm\index.js
+
+```js
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { createUser } from "../../redux/slices/userSlice";
+import { FormContaier, Form, Title, Label, Input, Button } from "./styled";
+import { Link, useNavigate } from "react-router-dom";
+import { ASYNC_STATUS } from "../../constants/asyncStatus";
+
+const RegisterForm = () => {
+  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, SetConfirmPassword] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { status, error } = useSelector((state) => state.user);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert("Passwords do not match ");
+      return;
+    }
+
+    dispatch(createUser({ email, user, password }));
+    navigate("/");
+  };
+
+  return (
+    <FormContaier>
+      <Form onSubmit={handleSubmit}>
+        <Title>Register</Title>
+        <Label>User</Label>
+        <Input
+          placeholder="Tu nombre de Usuario"
+          type="text"
+          value={user}
+          onChange={(e) => setUser(e.target.value)}
+          required
+        />
+        <Label>Email</Label>
+        <Input
+        placeholder="Añadetuemail@gmail.com"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <Label>Password</Label>
+        <Input
+          placeholder="Escribe tu contraseña"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <Label>Confirm Password</Label>
+        <Input
+          placeholder="Escribe tu contraseña"
+          type="password"
+          value={confirmPassword}
+          onChange={(e) => SetConfirmPassword(e.target.value)}
+          required
+        />
+        <Button type="submit">Register</Button>
+        {status === ASYNC_STATUS.REJECTED && <p>Error: {error}</p>}
+        <p>
+          Already have an account? <Link to="/login">Login</Link>
+        </p>
+      </Form>
+    </FormContaier>
+  );
+};
+
+export default RegisterForm;
+
+```
+
+Con sus estilos claro
+
+- \e-commerce-completo\01-frontend\mini-store\src\components\RegisterForm\styled.js
+
+```js 
+import styled from "styled-components";
+import {
+  flexCenter,
+  flexColumn,
+  buttonBase,
+  buttonHover,
+  darkModeText
+} from "../../styles/mixins";
+
+const FormContaier = styled.section`
+  ${flexColumn}
+  width: 90%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+
+  p {
+    font-weight: 400px;
+  }
+  ${darkModeText}
+  @media (hover: hover) and (pointer: fine) {
+    button:hover {
+      ${buttonHover}
+      color: #007bff;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h2,
+    form label {
+      color: #fff;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      button:hover {
+        ${buttonHover}
+        color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 0px;
+`;
+
+const Title = styled.h1`
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0;
+  font-size: clamp(15px, 23px, 22px);
+  text-wrap: nowrap;
+`;
+
+const Label = styled.label`
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+`;
+
+const Button = styled.button`
+  ${buttonBase}
+  ${buttonHover}
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  color: white;
+  width: 100%;
+  margin: 0;
+`;
+
+export { FormContaier, Form, Title, Label, Input, Button };
+
+```
