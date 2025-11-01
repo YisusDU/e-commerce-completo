@@ -106,7 +106,7 @@ class ProductAPIView(views.APIView):
         products = Product.objects.all() 
         serializer = ProductSerializer(products, many=True) #<-- serialize them
         content = serializer.data #<-- return the serialized data
-      
+    
         return Response(content, status=status.HTTP_200_OK)
   
     def post(self, request):
@@ -133,19 +133,19 @@ class ProductAPIModify(views.APIView):
         except Product.DoesNotExist:
             content = {"error": f"Producto con pk {pk} no encontrado"}
             return Response(content, status=status.HTTP_404_NOT_FOUND)  
-      
+    
     def put(self, request, pk):
         # Update a product
         product = Product.objects.get(pk=pk) or None
         if product is None:
             content = {"error":f"Producto con ID {pk} no encontrado"}
             return Response(content, status=status.HTTP_404_NOT_FOUND)
-      
+    
         serializer = ProductSerializer(product, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
-      
+    
         content = {"error": serializer.errors}
         return Response(content, status=status.HTTP_400_BAD_REQUEST)
   
@@ -155,13 +155,13 @@ class ProductAPIModify(views.APIView):
         if not product:
             content = {"error": f"Producto con ID {pk} no encontrado"}
             return Response(content, status=status.HTTP_404_NOT_FOUND)
-      
+    
         product_name = product.title
         product.delete()
         content = {"error": f"El producto {product_name} ha sido eliminado"}
-      
+    
         return Response(content, status=status.HTTP_200_OK)
-      
+    
 
 # ViewSet for User model
 class UserViewSet(ViewSet):
@@ -171,7 +171,7 @@ class UserViewSet(ViewSet):
         """Lista todos los usuarios"""
         users = User.objects.all()
         serializer = self.serializer_class(users, many=True)
-      
+    
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
@@ -182,7 +182,7 @@ class UserViewSet(ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         content = {"error": serializer.errors}
         return Response(content, status=status.HTTP_400_BAD_REQUEST)
-      
+    
     def retrieve(self, request, pk=None):
         """Maneja obtener un objeto por su ID"""
         user = get_object_or_404(User, pk=pk)
@@ -194,14 +194,14 @@ class UserViewSet(ViewSet):
         """Maneja la actualización completa de un objeto por su ID"""
         user = get_object_or_404(User, pk=pk)
         serializer = self.serializer_class(user, data=request.data, partial=False)
-      
+    
         if not serializer.is_valid():
             content = {"error": serializer.errors}
             return Response(
                 content, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-      
+    
         user = serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
 
@@ -215,7 +215,7 @@ class UserViewSet(ViewSet):
             content = {"error": serializer.errors}
             return Response(content, status=status.HTTP_400_BAD_REQUEST)
         serializer.save()
-      
+    
         return Response(serializer.validated_data, status=status.HTTP_200_OK)
   
     def destroy(self, request, pk=None):
@@ -249,3 +249,530 @@ urlpatterns = [
     path("", include(router.urls)), #<-- include the router URLs
 ]
 ```
+
+## Armar Frontend
+
+Ya tenemos suficiente información sobre la nueva estructura que recomendó el profe, así que iré componente por componente, tomando lo mejor de ambas versiones
+
+### Login
+
+Me parece sensato comenzar por el principio, de modo que he comentado todas las rutas del router, cabe resaltar que el archivo index de loginform, depende de un hook que valida el formulario e interactuaba con el store, será necesario modificarlo en el futuro
+
+- \e-commerce-completo\01-frontend\mini-store\src\router\AppRouter.js
+
+```js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "../pages/LoginPage";
+// import RegisterPage from "../pages/RegisterPage";
+// import HomePage from "../pages/HomePage";
+// import CartPage from "../pages/CartPage";
+// import CheckoutPage from "../pages/CheckoutPage";
+// import PostCheckoutPage from "../pages/PostCheckoutPage";
+
+const AppRouter = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        {/* <Route path="/register" element={<RegisterPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/post-checkout" element={<PostCheckoutPage />} /> */}
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRouter;
+
+```
+
+Y así quedó mi componente vacío de login:
+
+- \e-commerce-completo\01-frontend\mini-store\src\pages\LoginPage\index.js
+
+```js
+import React from "react";
+import logo from "../../assets/img/logoEcomm.jpg";
+import {
+  LoginContainer,
+  LogTitle,
+  LogOptions,
+  LoginImg,
+  LoginSignIn,
+  LoginFieldset,
+} from "./styles";
+import LoginForm from "../../components/LoginForm";
+
+const LoginPage = () => {
+  return (
+    <LoginContainer>
+      <LogOptions>
+        <LoginImg />
+        <LoginSignIn>
+          <LogTitle>
+            <img src={logo} alt="logo-store" />
+            <h1>
+              Welcome to <span>Mini Store</span>
+            </h1>
+          </LogTitle>
+          <LoginForm />
+        </LoginSignIn>
+      </LogOptions>
+    </LoginContainer>
+  );
+};
+
+export default LoginPage;
+
+```
+
+Pero no se veía nada en la siguiente ruta, solo mensajes de error sobre los estilos
+
+- http://localhost:3000/ebac-ea-third-proyect/login
+
+#### styles
+
+Como en el navegador me daba errores sobre los estilos, al revizar mi archivo app.js, podemos ver que solo tiene Global styles, pero yo anteriormente usaba un theme provider, así que envolvemos la App.js con el themeprovider
+
+- \e-commerce-completo\01-frontend\mini-store\src\App.js
+
+```js
+import React from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import AppRouter from "./router/AppRouter";
+import { ThemeProvider } from "styled-components";
+import Theme from "./styles";
+
+function App() {
+  return (
+    <div>
+      <ThemeProvider theme={Theme}>
+        <GlobalStyles />
+        <AppRouter />
+      </ThemeProvider>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+#### El archivo de router
+
+Tuve que hacer algunos cambios para ir paso a paso y definí una ruta base:
+
+- \e-commerce-completo\01-frontend\mini-store\src\router\AppRouter.js
+
+```js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "../pages/LoginPage";
+// import RegisterPage from "../pages/RegisterPage";
+// import HomePage from "../pages/HomePage";
+// import CartPage from "../pages/CartPage";
+// import CheckoutPage from "../pages/CheckoutPage";
+// import PostCheckoutPage from "../pages/PostCheckoutPage";
+
+const AppRouter = () => {
+  return (
+    <Router basename="/e-commerce-completo">
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        {/* <Route path="/register" element={<RegisterPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/post-checkout" element={<PostCheckoutPage />} /> */}
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRouter;
+
+```
+
+#### package.json - homepage
+
+Al hacer el cambio anterior, también necesito actualizar el package.json, con la nueva ruta home
+
+- \e-commerce-completo\01-frontend\mini-store\package.json
+
+```js
+{
+  "name": "mini-store",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://YisusDU.github.io/e-commerce-completo",
+```
+
+#### App.js
+
+Tambien fue necesario corregir la app, para que utilizara los estilos
+
+- \e-commerce-completo\01-frontend\mini-store\src\App.js
+
+```js
+import React from "react";
+import GlobalStyles from "./styles/GlobalStyles";
+import AppRouter from "./router/AppRouter";
+import { ThemeProvider } from "styled-components";
+import Theme from "./styles";
+
+function App() {
+  return (
+    <div>
+      <ThemeProvider theme={Theme}>
+        <GlobalStyles />
+        <AppRouter />
+      </ThemeProvider>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+#### index.js
+
+Habia un pequeño error al importar el provider de la store
+
+- \e-commerce-completo\01-frontend\mini-store\src\index.js
+
+```js 
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
+);
+
+```
+
+#### LoginForm
+
+y había que mezclar el loginform con las funcionalidades anterirores:
+
+- \e-commerce-completo\01-frontend\mini-store\src\components\LoginForm\index.js
+
+```js
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUser } from "../../redux/slices/userSlice";
+import { LoginFieldset, LoginFormContainer } from "./styles";
+import Input from "../ui/Input";
+import Button from "../ui/Button";
+import { Link, useNavigate } from "react-router-dom";
+import { ASYNC_STATUS } from "../../constants/asyncStatus";
+import useAuth from "../../hooks/useAuth";
+
+const LoginForm = () => {
+  const {
+    emailValid,
+    passwordValid,
+    validateInput,
+    handleValidation,
+    handleRegister,
+    handleGuest,
+  } = useAuth();
+
+ 
+  return (
+    <LoginFormContainer>
+      <LoginFieldset>
+        <h2>Nice to see you again!</h2>
+        <form onSubmit={handleValidation}>
+          <label htmlFor="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@email.com"
+            required
+            className={
+              emailValid === null ? "" : emailValid ? "valid" : "invalid"
+            }
+            onBlur={validateInput}
+          />
+          <span
+            className={emailValid === false ? "error-message" : "message-space"}
+          >
+            {emailValid === false && "Incorrect Email"}
+          </span>
+          <label htmlFor="password">Password:</label>
+          <input
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Password123"
+            minLength={8}
+            required
+            className={
+              passwordValid === null ? "" : passwordValid ? "valid" : "invalid"
+            }
+            onBlur={validateInput}
+          />
+          <span
+            className={
+              passwordValid === false ? "error-message" : "message-space"
+            }
+          >
+            {passwordValid === false && "Incorrect Password"}
+          </span>
+          <button type="submit">Login</button>
+        </form>
+      </LoginFieldset>
+      <p>Or......</p>
+      <h2 className="notAcount">Don't you have an account?</h2>
+      <button onClick={handleRegister}>Go to register!</button>
+      <p>Or......</p>
+      <button className="guest" onClick={handleGuest}>
+        Continue as guest
+      </button>
+    </LoginFormContainer>
+  );
+};
+
+export default LoginForm;
+
+```
+
+No olvidemos el archivo de estilos, del cual generamos una nueva etiqueta contenedora
+
+- \e-commerce-completo\01-frontend\mini-store\src\components\LoginForm\styles.js
+
+```js 
+import styled from "styled-components";
+import {
+  flexColumn,
+  buttonBase,
+  darkModeText,
+  buttonHover,
+  flexCenter,
+} from "../../styles/mixins";
+
+const LoginFormContainer = styled.section`
+  ${flexCenter}
+  ${flexColumn}
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  button {
+    width: 80%;
+    margin-top: 10px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .guest {
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgb(167, 51, 40);
+    border: 2px solid rgb(167, 51, 40);
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    button:hover {
+      background-color: transparent;
+      color: #28a745;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    }
+
+    .guest:hover {
+      background-color: transparent;
+      color: rgb(167, 51, 40);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(167, 51, 40, 0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #919191;
+    color: #fff;
+    p {
+      color: #fff;
+    }
+
+    .notAcount {
+      color: #fff;
+    }
+    @media (hover: hover) {
+      button:hover,
+      .guest:hover {
+        color: #fff;
+      }
+    }
+  }
+`;
+
+const LoginFieldset = styled.fieldset`
+  ${flexColumn}
+  width: 90%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+  h2 {
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(15px, 23px, 22px);
+    text-wrap: nowrap;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0px;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #000;
+    }
+    .error-message,
+    .message-space {
+      height: 20px;
+      display: block;
+      margin-top: 4px;
+      font-size: 0.9rem;
+    }
+
+    .error-message {
+      color: #f44336;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      }
+      &.valid {
+        border: 2px solid #4caf50;
+      }
+
+      &.invalid {
+        border: 2px solid #f44336;
+      }
+    }
+  }
+  button {
+    ${buttonBase}
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+
+  ${darkModeText}
+  @media (hover: hover) and (pointer: fine) {
+    button:hover {
+      ${buttonHover}
+      color: #007bff;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h2,
+    form label {
+      color: #fff;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      button:hover {
+        ${buttonHover}
+        color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+`;
+
+export { LoginFieldset, LoginFormContainer };
+
+```
+
+## index.html
+
+Noté que podríamos establecer diseños para que se respetara mejor el tamaño de pantalla
+
+- \e-commerce-completo\01-frontend\mini-store\public\index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en" style="width: 100dvw;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+    <title>Mini Store</title>
+  </head>
+  <body style="margin: 0; width: 100%;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  
+  </body>
+</html>
+
+```
+
+## RegisterPage

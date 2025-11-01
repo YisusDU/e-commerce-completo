@@ -1,54 +1,77 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../redux/slices/userSlice";
-import { FormContainer, Form, Title, Label } from "./styled";
+import { LoginFieldset, LoginFormContainer } from "./styles";
 import Input from "../ui/Input";
 import Button from "../ui/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { ASYNC_STATUS } from "../../constants/asyncStatus";
+import useAuth from "../../hooks/useAuth";
 
 const LoginForm = () => {
-  const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const dispatch = useDispatch();
-  const { status, error } = useSelector((state) => state.user);
+  const {
+    emailValid,
+    passwordValid,
+    validateInput,
+    handleValidation,
+    handleRegister,
+    handleGuest,
+  } = useAuth();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-// Corregir en práctica, por ahora no funciona
-    // dispatch(fetchUser({ email, password }))
-    //   .unwrap()
-    //   .then(() => {
-    //     navigate("/");
-    //   });
-  };
-
+ 
   return (
-    <FormContainer>
-      <Form onSubmit={handleSubmit}>
-        <Title>Login</Title>
-        <Label>Email</Label>
-        <Input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <Label>Password</Label>
-        <Input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <Button type="submit">Login</Button>
-        {status === ASYNC_STATUS.REJECTED && <p>Error {error}</p>}
-        <p>
-          Don't have an account? <Link to="/register">Register</Link>
-        </p>
-      </Form>
-    </FormContainer>
+    <LoginFormContainer>
+      <LoginFieldset>
+        <h2>Nice to see you again!</h2>
+        <form onSubmit={handleValidation}>
+          <label htmlFor="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@email.com"
+            required
+            className={
+              emailValid === null ? "" : emailValid ? "valid" : "invalid"
+            }
+            onBlur={validateInput}
+          />
+          <span
+            className={emailValid === false ? "error-message" : "message-space"}
+          >
+            {emailValid === false && "Incorrect Email"}
+          </span>
+          <label htmlFor="password">Password:</label>
+          <input
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Password123"
+            minLength={8}
+            required
+            className={
+              passwordValid === null ? "" : passwordValid ? "valid" : "invalid"
+            }
+            onBlur={validateInput}
+          />
+          <span
+            className={
+              passwordValid === false ? "error-message" : "message-space"
+            }
+          >
+            {passwordValid === false && "Incorrect Password"}
+          </span>
+          <button type="submit">Login</button>
+        </form>
+      </LoginFieldset>
+      <p>Or......</p>
+      <h2 className="notAcount">Don't you have an account?</h2>
+      <button onClick={handleRegister}>Go to register!</button>
+      <p>Or......</p>
+      <button className="guest" onClick={handleGuest}>
+        Continue as guest
+      </button>
+    </LoginFormContainer>
   );
 };
 

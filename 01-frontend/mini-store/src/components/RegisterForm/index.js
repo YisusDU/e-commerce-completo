@@ -61,7 +61,7 @@ const RegisterForm = () => {
         <Button type="submit">Register</Button>
         {status === ASYNC_STATUS.REJECTED && <p>Error: {error}</p>}
         <p>
-          Already have an account? <Link to="/login"> Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
       </Form>
     </FormContaier>

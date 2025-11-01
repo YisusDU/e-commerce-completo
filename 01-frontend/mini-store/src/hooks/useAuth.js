@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { verifyLogin } from "../state/products.slice";
+// import { verifyLogin } from "../state/products.slice";
 import { useNavigate } from "react-router-dom";
 
 const useAuth = () => {

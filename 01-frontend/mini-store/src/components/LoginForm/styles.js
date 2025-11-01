@@ -1,0 +1,182 @@
+import styled from "styled-components";
+import {
+  flexColumn,
+  buttonBase,
+  darkModeText,
+  buttonHover,
+  flexCenter,
+} from "../../styles/mixins";
+
+const LoginFormContainer = styled.section`
+  ${flexCenter}
+  ${flexColumn}
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  button {
+    width: 80%;
+    margin-top: 10px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .guest {
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgb(167, 51, 40);
+    border: 2px solid rgb(167, 51, 40);
+    padding: 12px 24px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    button:hover {
+      background-color: transparent;
+      color: #28a745;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    }
+
+    .guest:hover {
+      background-color: transparent;
+      color: rgb(167, 51, 40);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(167, 51, 40, 0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #919191;
+    color: #fff;
+    p {
+      color: #fff;
+    }
+
+    .notAcount {
+      color: #fff;
+    }
+    @media (hover: hover) {
+      button:hover,
+      .guest:hover {
+        color: #fff;
+      }
+    }
+  }
+`;
+
+const LoginFieldset = styled.fieldset`
+  ${flexColumn}
+  width: 90%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+  h2 {
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(15px, 23px, 22px);
+    text-wrap: nowrap;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0px;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #000;
+    }
+    .error-message,
+    .message-space {
+      height: 20px;
+      display: block;
+      margin-top: 4px;
+      font-size: 0.9rem;
+    }
+
+    .error-message {
+      color: #f44336;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      }
+      &.valid {
+        border: 2px solid #4caf50;
+      }
+
+      &.invalid {
+        border: 2px solid #f44336;
+      }
+    }
+  }
+  button {
+    ${buttonBase}
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+
+  ${darkModeText}
+  @media (hover: hover) and (pointer: fine) {
+    button:hover {
+      ${buttonHover}
+      color: #007bff;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h2,
+    form label {
+      color: #fff;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      button:hover {
+        ${buttonHover}
+        color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+`;
+
+export { LoginFieldset, LoginFormContainer };
