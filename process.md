@@ -6155,8 +6155,8 @@ Ahora que tenemos un fixture para los productos, podemos ignorar la base de dato
 db.sqlite3
 ```
 
-y para que git deje de trackearlo
+y para que git deje de trackearlogit rm --cached db.sqlite3
 
-```
-git rm --cached db.sqlite3
-```
+## SEO the last frontier
+
+Lo último que quiero hacer es aplicar seo para que el sitio se fluya mejor cuando lo despleguemos, si llego a hacerlo, no recuerdo bien que hay que hacer, debo revizar mis notas
