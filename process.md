@@ -4960,12 +4960,12 @@ class OrderCreateSerializer(serializers.ModelSerializer):
                 product = Product.objects.get(id=item_data['product_id'])
             except Product.DoesNotExist:
                 raise serializers.ValidationError(f"Producto ID {item_data['product_id']} no existe.")
-    
+  
             # ¡Usamos el precio del BACKEND, no del frontend!
             price = product.price 
             quantity = item_data['quantity']
             total += price * quantity
-    
+  
             # Preparamos el "snapshot"
             items_para_crear_en_db.append(
                 OrderItem(
@@ -5920,7 +5920,7 @@ def get_details(driver, url):
     try:
         description_id = "featurebullets_feature_div"
         description_class = "a-expander-content a-expander-partial-collapse-content"
-      
+    
         id_element = soup.find("div", id=description_id)
         if id_element:
             description = id_element.get_text(separator='\n', strip=True)
@@ -6001,13 +6001,13 @@ def get_product_list(driver, category_url, category_name, start_pk, limit_per_ca
         # 3. Filtrar enlaces no válidos (a veces 'a_tags' captura cosas raras)
         if not link or not link.startswith("/") or "slredirect" in link:
             continue
-      
+    
         print(f"\nProcesando (PK: {pk_counter}): {title[:50]}...")
         detail_link = "https://www.amazon.com.mx" + link
 
         # 4. Llamar a get_details (pasando el driver)
         details = get_details(driver, detail_link)
-      
+    
         # 5. VALIDACIÓN
         if details['price'] == 0.0:
             print(f"Omitiendo '{title[:50]}' (No se encontró precio o no está disponible)")
@@ -6031,7 +6031,7 @@ def get_product_list(driver, category_url, category_name, start_pk, limit_per_ca
                 "is_digital": False
             }
         }
-      
+    
         # 7. Añadir a la lista y actualizar contadores
         products_list_data.append(product_fixture)
         pk_counter += 1                     # Incrementa el PK global
@@ -6085,9 +6085,9 @@ try:
         category_name = category_job['name']
         category_url = category_job['url']
         link_class_from_config = category_job['link_class'] # <-- NUEVA LÍNEA
-      
+    
         print(f"\n--- INICIANDO CATEGORÍA: {category_name} (Iniciando en PK: {current_global_pk}) ---")
-      
+    
         # MODIFICADO: Pasar el nuevo parámetro 'product_link_class' a la función
         products_from_category, next_pk = get_product_list(
             driver=driver,
@@ -6097,11 +6097,11 @@ try:
             limit_per_category=LIMIT_PER_CATEGORY,
             product_link_class=link_class_from_config # <-- NUEVO PARÁMETRO
         )
-      
+    
         # 5. Recolectar resultados y actualizar el PK
         all_products_master_list.extend(products_from_category)
         current_global_pk = next_pk
-      
+    
         print(f"--- CATEGORÍA TERMINADA: {category_name} | Productos añadidos: {len(products_from_category)} ---")
 
 except Exception as e:
@@ -6128,7 +6128,7 @@ except Exception as e:
 
 Ya sólo resta cargar la base de datos con el fixture
 
-he cargado exitosamente los productos en la db, solo quiero ajustar un poco el tamaño de las imágenes en productlist 
+he cargado exitosamente los productos en la db, solo quiero ajustar un poco el tamaño de las imágenes en productlist
 
 ## ProductCard.js estilos de imagen
 
@@ -6160,3 +6160,53 @@ y para que git deje de trackearlogit rm --cached db.sqlite3
 ## SEO the last frontier
 
 Lo último que quiero hacer es aplicar seo para que el sitio se fluya mejor cuando lo despleguemos, si llego a hacerlo, no recuerdo bien que hay que hacer, debo revizar mis notas
+
+Para react podemos inyectar seo dinámico con una librería helmet y definiendo un componente dinámico y reutilizable que recibe props y se importa en cada page, pero por ahora solo quiero algo más sencillo
+
+- \e-commerce-completo\01-frontend\mini-store\public\index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Find the best deals on premium gym wear, men's and women's fashion, and top-tier cosmetics. Quality and style, all in one place."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="gym wear, activewear, men's fashion, women's fashion, cosmetics, beauty, online store, shop clothing, workout gear"
+    />
+
+    <meta
+      property="og:title"
+      content="Mini Store | Gym Wear, Fashion & Cosmetics"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%PUBLIC_URL%" />
+
+    <meta
+      property="og:description"
+      content="Discover the best deals on activewear, fashion, and cosmetics."
+    />
+    <meta property="og:site_name" content="Mini Store" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Mini Store</title>
+  </head>
+  <body style="margin: 0; width: 100%">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
+```
