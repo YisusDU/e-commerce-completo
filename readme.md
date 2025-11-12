@@ -124,6 +124,12 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+> Nota
+>
+> Para cargar los productos a la DB, utilizar el fixture en e-commerce-completo\02-backend\ecommerce_project\product\fixtures\Product.json
+>
+> python manage.py loaddata product\fixtures\Product.json
+
 ### Frontend (React)
 
 **Bash**
