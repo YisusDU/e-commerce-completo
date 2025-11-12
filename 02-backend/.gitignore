@@ -1,0 +1,13 @@
+# Ignorar el EntEorno Virtual
+.venv/
+
+# Ignorar la Base de Datos
+db.sqlite3
+
+# Ignorar archivos temporales
+__pycache__/
+*.pyc
+
+# Opcional (VSCode / PyCharm)
+.vscode/
+.idea/

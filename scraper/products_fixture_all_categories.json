@@ -1,0 +1,642 @@
+[
+    {
+        "model": "product.product",
+        "pk": 1,
+        "fields": {
+            "title": "Chaqueta acolchada ligera con capucha y aislamiento térmico para hombre, para correr, viajes",
+            "slug": "chaqueta-acolchada-ligera-con-capucha-y-aislamiento-térmico-para-hombre-para-correr-viajes",
+            "description": "Detalles del producto\nTipo de tejido\nShell:100% Nylon Filling:100% Polyester\nInstrucciones de cuidado del material\nLavado a máquina\nAcerca de este artículo\nTe mantiene abrigado y cómodo: La chaqueta acolchada para hombre cuenta con aislamiento térmico de alta tecnología para aislar el aire frío y retener el calor. Carcasa de nailon duradera y algodón suave respetuoso con el medio ambiente relleno alternativo que te mantiene seco y proporciona suficiente comodidad en situaciones de humedad fría. Ideal para tu chaqueta de otoño/invierno/primavera.\nResistente al agua y transpirable: la chaqueta de invierno para hombre está hecha de tela recubierta con acabado DWR, que se mantiene transpirable con un índice resistente al agua de 3000 mm, mantiene tu núcleo cómodo y seco bajo la lluvia ligera, estas chaquetas y abrigos para hombre te mantienen caliente y te ayudan a combatir el mal clima lluvioso o brumoso.\nFácil de empacar: Chaqueta acolchada para hombre con capucha, puedes guardarla en un minuto y ponerla en la bolsa pequeña impermeable, nuestro abrigo plegable con aislamiento ligero para hombre es muy adecuado para uso casual, trabajo al aire libre, chaqueta térmica plegable de burbujas para hombre no ocupará ningún lugar en tu equipaje, mochila, bolso, para que puedas viajar sin presión.\nChaqueta de invierno resistente al viento: 1. La carcasa de nailon suave resistente al viento tiene una fuerte resistencia al viento y abriga. 2. Puños elásticos ajustables que ayudan a sellar el calor. 3. Capucha cálida con cordón, cuello alto, dobladillo elástico ajustable. Todo cuidadosamente diseñado para un mejor efecto resistente al viento. 4. Rellena de algodón suave que mantiene en tu cuerpo el calor adecuado para protegerte del viento.\n6 bolsillos: la chaqueta acolchada para hombre incluye 2 bolsillos exteriores con cremallera y 4 bolsillos interiores. Es ideal para guardar dinero, llaves, teléfono, cartera, pasaporte, etc., 2 bolsillos interiores pequeños que se utilizan especialmente para poner linterna y telescopio. Proporciona una gran privacidad y comodidad para ti.",
+            "price": 1000.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/71gdW5vqH+L._AC_SY550_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 2,
+        "fields": {
+            "title": "Playera Polo Hombre de Manga Corta, Camisa Tipo Polo para Caballero en Algodón Poliéster Ropa Deportiva y Casual para Hombres Colores Sólidos",
+            "slug": "playera-polo-hombre-de-manga-corta-camisa-tipo-polo-para-caballero-en-algodón-poliéster-ropa-deportiva-y-casual-para-hombres-colores-sólidos",
+            "description": "Detalles del producto\nTipo de tejido\nAlgodón + poliéster\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nBotón\nTipo de manga\nManga corta\nPaís de origen\nChina\nAcerca de este artículo\n【Comodidad premium en playera polo hombre】 Nuestros polos para hombre están confeccionados con tejido de mezcla de algodón súper suave que se adapta a todo tipo de cuerpos. La camisa tipo polo hombre ofrece un tacto como de segunda piel, ideal para uso diario. Diseñado para movilidad sin restricciones, es la playera tipo polo hombre más cómoda que encontrarás.\n【Durabilidad excepcional en polos hombre】 Fabricada con materiales resistentes al estiramiento, encogimiento y fricción, esta playera polo hombre mantiene su forma lavado tras lavado. La tecnología antiarrugas garantiza que tu polo hombre luzca impecable incluso después de horas de uso. ¡Viste estos polos para hombre con total confianza!\n【Tecnología transpirable en playeras polo】 El innovador tejido de estas camisas polo para hombre promueve la circulación del aire, manteniéndote fresco en climas cálidos. Perfecta para deportes o días calurosos, la playera polo absorbe rápidamente el sudor. ¡Experimenta la máxima frescura con nuestra ropa hombre de alto rendimiento!\n【Versatilidad elegante en playeras hombre】 Con su clásico cuello polo y botonadura delantera, estas playeras tipo polo hombre son ideales para oficina, salidas casuales o golf. El corte clásico de estas camisas polo ofrece un look pulido que combina con cualquier pantalón. ¡El polo hombre perfecto para cualquier ocasión!\n【Cuidado fácil de playeras polo hombre】 Recomendamos secado al aire para preservar al máximo tu polo, aunque el secado en máquina solo causa un 5% de encogimiento sin afectar la calidad. Estas playeras hombre requieren mínimo mantenimiento, ahorrándote tiempo y esfuerzo. ¡Disfruta de larga vida útil con estas camisas polo para hombre!",
+            "price": 279.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51K8tNQoq2L._AC_SX522_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 3,
+        "fields": {
+            "title": "Playera de Manga Larga de Rendimiento para Hombre, Absorbe la Humedad, para Gimnasio, Entrenamiento, Camisetas de protección Solar para Correr",
+            "slug": "playera-de-manga-larga-de-rendimiento-para-hombre-absorbe-la-humedad-para-gimnasio-entrenamiento-camisetas-de-protección-solar-para-correr",
+            "description": "Detalles del producto\nTipo de tejido\n86% poliéster 14% elastano,***Camiseta de manga larga para hombre Recomendación de tallas: el modelo mide 1,88 m, pesa 83,5 kg y lleva la talla M. Por favor, ten en cuenta los ejemplos de tallas a continuación*** (Ejemplo: talla \"M recomendada\": talla \"M recomendada\": talla \"XL recomendada»). (Ejemplo: talla \"L recomendada\"). Tamaño para 1, 83 m, 97,5 kg.\nInstrucciones de cuidado del material\nLavar a máquina\nEstilo de cuello\nCuello crew\nTipo de manga\nManga larga\nAcerca de este artículo\nTejido UPF 30+ Premium - Con 86% poliéster y 14% spandex, esta camisa UV bloquea 97% de rayos dañinos, ofreciendo máxima transpirabilidad y elasticidad\nTecnología Secado Rápido - Tejido absorbente que elimina el sudor y seca el doble de rápido, manteniéndote fresco durante entrenamientos intensos\nComodidad Anti-Rozaduras - Costuras planas de 4 agujas evitan irritaciones, mientras el corte relajado disimula el abdomen sin apretar\nEstilo Versátil con Seguridad - Textura única para deporte y diario. Bandas reflectantes mejoran visibilidad nocturna\nResistente al Lavado - Lavable a máquina sin perder color ni formar pelusas. Conserva protección UV lavada tras lavada",
+            "price": 398.99,
+            "imageUrl": "https://m.media-amazon.com/images/I/71029h61KvL._AC_SY445_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 4,
+        "fields": {
+            "title": "Levi'S Jeans para Hombre Modelo 510 Corte Skinny",
+            "slug": "levis-jeans-para-hombre-modelo-510-corte-skinny",
+            "description": "Detalles del producto\nTipo de tejido\nMayormente Algodón\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nBotón\nEstilo de cintura\nTiro medio\nPaís de origen\nMéxico\nAcerca de este artículo\nCorte a tu estilo: Perfectos para cualquier ocasión, los jeans Levi's ofrecen un ajuste clásico que nunca pasa de moda.\nCalidad Levi's garantizada: Confeccionados con materiales de alta calidad para una durabilidad excepcional.\nVariedad de estilos: Desde el corte recto hasta el slim fit, hay un par de Levi's para cada estilo y preferencia.\nComodidad todo el día: Diseñados para brindar confort sin sacrificar el estilo. Versatilidad: Ideales para combinar con cualquier look, ya sea casual o más formal.\nDetalles icónicos: Los emblemáticos remaches de cobre y la etiqueta roja distintiva de Levi's añaden un toque único.",
+            "price": 613.93,
+            "imageUrl": "https://m.media-amazon.com/images/I/5117jxiE8-L._AC_SX522_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 5,
+        "fields": {
+            "title": "Clásico Ajustado Hombre",
+            "slug": "clásico-ajustado-hombre",
+            "description": "Detalles del producto\nTipo de tejido\nSólidos: 100% Algodón / Jaspes: 60% Algodón, 40% Poliéster\nInstrucciones de cuidado del material\nLavar a mano\nPaís de origen\nEl Salvador\nAcerca de este artículo\nCon tecnología fresh iq que inhibe la reproducción de bacterias que causan mal olor + secado rápido: rápida evaporación de la humedad\nEtiqueta impresaque no lastima\nAlgodón suave para mayor comodidad\nCorte y ajuste perfecto\nSuave al tacto",
+            "price": 347.39,
+            "imageUrl": "https://m.media-amazon.com/images/I/71ZT6R1E2vL._AC_SX385_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 6,
+        "fields": {
+            "title": "Paquete de 6 camisas de manga larga para hombre, que absorben la humedad, UPF con protección solar, camisetas de entrenamiento, estilo casual",
+            "slug": "paquete-de-6-camisas-de-manga-larga-para-hombre-que-absorben-la-humedad-upf-con-protección-solar-camisetas-de-entrenamiento-estilo-casual",
+            "description": "Detalles del producto\nTipo de tejido\n10% poliéster\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nPull on\nEstilo de cuello\nCuello crew\nAcerca de este artículo\nMantente fresca y seca: nuestras camisas de manga larga para hombre están hechas con poliéster 100% suave y transpirable. Esta tela que absorbe la humedad absorbe rápidamente la humedad de la piel, lo que te proporciona una sensación cómoda y seca a través de cualquier actividad atlética\n【Ropa deportiva de alta calidad】Estas camisetas de manga larga para hombre están diseñadas para entrenamiento e informal, que tienen cuello redondo impreso sin etiquetas y mangas raglán, manteniéndote alejado de rozaduras de la piel y proporciona una gama completa de movimiento para tus brazos\nProtección solar: nuestras camisas de trabajo de manga larga para hombre pueden proteger eficazmente tu piel bloqueando los dañinos rayos UVA y UVB del sol, que es el mejor equipo para pescar y correr\nOcasión aplicable: la playera de manga larga OYGSeig para hombre es adecuada para cualquier ocasión casual, como uso diario, correr, caminar en la playa, pesca, natación, golf, día festivo, etc. También proporcionamos una gama de colores, incluyendo blanco, negro y más para que elijas, fácil de combinar con el resto de tu clóset\n【El mejor servicio】Te recomendamos sinceramente lavar a máquina con agua fría y colgar o secar al aire. Si tienes algún problema con nuestras camisas de entrenamiento de manga larga para hombres, por favor ponte en contacto con nosotros inmediatamente. Resolveremos el problema hasta que estés satisfecho",
+            "price": 595.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/71H1SxVoL+L._AC_SY445_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 7,
+        "fields": {
+            "title": "Paquete de 5 Camisetas activas de Secado rápido con Cuello Redondo para Hombre, Camisetas de Manga Corta para Correr, Gimnasio, Entrenamiento, a Granel",
+            "slug": "paquete-de-5-camisetas-activas-de-secado-rápido-con-cuello-redondo-para-hombre-camisetas-de-manga-corta-para-correr-gimnasio-entrenamiento-a-granel",
+            "description": "Detalles del producto\nTipo de tejido\n90 % poliéster, 10 % elastán\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nSin cordones\nEstilo de cuello\nCuello crew\nAcerca de este artículo\nCaracterísticas ergonómicas: cortes más amplios para una comodidad total. Cuello redondo atlético, mangas cortas elásticas y cierre elástico para una óptima libertad de movimiento. No demasiado apretado, ni demasiado suelto. Libera la parte superior del cuerpo con cada movimiento. La construcción elástica en 4 direcciones permite un mejor movimiento en todas las direcciones.\nCinco estilos: amplia variedad con características como estampado degradado genial, detalles reflectantes e inserciones en contraste para un ajuste personalizado.\nCorte regular: camisetas con tallas estándar de EE. UU., para un ajuste relajado y cómodo. Ajuste estilizado y dobladillo con forma para una mejor cobertura en cada movimiento. Elige una talla más grande si prefieres un ajuste holgado. Instrucciones de cuidado: lava a máquina en frío con colores similares.\nSecado rápido: la tela de poliéster y licra es de secado rápido, ultrasuave y tiene una sensación más natural. El tejido que absorbe la humedad te mantiene fresco y seco durante el entrenamiento. Suave al tacto y agradable en la piel. Diseñado para una excelente ventilación y transpirabilidad, disipa el calor fácilmente. Ten en cuenta: los porcentajes de materiales pueden variar según el estilo. Consulta la etiqueta para ver el contenido real (idioma español no garantizado).\nVariedad y valor: paquete de 5 camisetas de manga corta para hombre, de alta calidad, en diferentes colores y estilos. Camisetas deportivas versátiles para el armario de cada hombre. Diseñadas para mayor comodidad y rendimiento. Ideal para correr, culturismo, entrenamiento de fuerza o incluso para actividades diarias.",
+            "price": 652.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/71nykOlQFxL._AC_SX342_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 8,
+        "fields": {
+            "title": "Camisa de Vestir Algodón y Poliéster Slim Fit",
+            "slug": "camisa-de-vestir-algodón-y-poliéster-slim-fit",
+            "description": "Detalles del producto\nTipo de tejido\n60% Algodon, 40% Poliester\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nBotón\nEstilo de cuello\nCuello redondo\nPaís de origen\nMéxico\nAcerca de este artículo\nTELA EXTRAORDINARIA: 60% Algodón y 40% Poliéster- Esta tela es única en México importada exclusivamente por Manchester. El Algodón asegura la frescura y comodidad de la prenda, además permite una larga durabilidad. El Poliéster hará que se eliminen las arrugas haciendo de esta camisa algo especial. Siéntete libre de usarla en cualquier momento, desde eventos o fiestas hasta para un día normal.\nREGALO PERFECTO: A cualquier hombre le encantará por la elegancia y calidad de la camisa. Es el obsequio ideal para el hombre que siempre busca verse bien. Regala una camisa Rossini para esa persona especial en tu vida.\nENTRETELAS EUROPEAS: Nuestras entretelas son de la más alta calidad europea y las fusionamos con maquinaria alemana con la más alta tecnología. Asegurando que los cuellos y puños nunca pierdan su forma en más de 60 lavadas.\nBOTÓN DE SASTRE: Nuestros botones están cosidos en técnica sartorial y tienen la tecnología de girar 180 grados, mientras que el del cuello gira 360 grados, una camisa única, nunca ha sido tan fácil el desabrochar y abrochar botones.\nLAVADO EN CASA: Olvídate de las tintorerías. Lávalo y sécalo en casa con maquina o a mano.",
+            "price": 540.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51+TdsYl5WL._AC_SX342_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 9,
+        "fields": {
+            "title": "Camisas Cuello Mao para Hombre - Estilo Moderno, Confort y Versatilidad - Manga Larga y Corta - Material de Alta Calidad - Perfectas para Ocasiones Formales y Casual",
+            "slug": "camisas-cuello-mao-para-hombre---estilo-moderno-confort-y-versatilidad---manga-larga-y-corta---material-de-alta-calidad---perfectas-para-ocasiones-formales-y-casual",
+            "description": "Detalles del producto\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nPull on\nEstilo de cuello\nCuello redondo\nTipo de manga\nManga larga\nAcerca de este artículo\nMaterial de alta calidad: Algodón 50%, Poliéster 45%, Elastano 5% para una combinación ideal de suavidad, elasticidad y durabilidad.\nDiseño cuello mao moderno: Aporta un estilo elegante y sofisticado, perfecto para eventos formales o casuales.\nComodidad superior: Tela transpirable que asegura frescura y confort durante todo el día, ideal para largas jornadas.\nAjuste perfecto: Corte diseñado para adaptarse al cuerpo sin restringir el movimiento, disponible en varias tallas.\nFácil cuidado: Lavable a máquina sin perder la forma ni el color, garantizando una prenda siempre lista para usar.",
+            "price": 629.3,
+            "imageUrl": "https://m.media-amazon.com/images/I/515RPnuVVhL._AC_SX385_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 10,
+        "fields": {
+            "title": "Guayabera Casual de Hombre en Manga Corta Algodón-Poliéster con Bordado",
+            "slug": "guayabera-casual-de-hombre-en-manga-corta-algodón-poliéster-con-bordado",
+            "description": "Detalles del producto\nTipo de tejido\n60% Algodon 40% Poliester\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nBotón\nEstilo de cuello\nMonaco\nAcerca de este artículo\nMaterial de Alta Calidad: 60% algodón y 40% Poliéster. El algodón y el poliéster hacen una perfecta combinación ya que te asegura comodidad y ayuda a eliminar arrugas en la prenda, permitiendo una larga durabilidad.\nEstilo Clasico y Funcional: Guayaberas para hombre con detalles bordados que evocan tradición; una opción fresca y elegante dentro de las camisas para hombre.\nTextura y Corte Agradable: Fabricada con materiales ligeros, esta guayabera se adapta bien al cuerpo, brindando libertad de movimiento y estilo sutil.\nFácil de combinar : Guayabera que luce impecable con pantalón de lino, mezclilla o bermudas, creando atuendos modernos para eventos casuales o reuniones especiales.\nBeneficios en cada uso: Camisa guayabera que mantiene el cuerpo fresco, evita exceso de calor, requiere poco planchado y aporta un estilo elegante sin sacrificar comodidad.",
+            "price": 1141.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51KaP9GN8bS._AC_SY445_.jpg",
+            "category": "Mens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 11,
+        "fields": {
+            "title": "NORDAY | Shaker Proteina de Acero Inoxidable | Pre Workout Shaker Gym - Vaso para Proteina - Botella Mezcladora de Coctelera | Tapa Hermética Antiderrame - Protein Vaso Miliar 25oz",
+            "slug": "norday--shaker-proteina-de-acero-inoxidable--pre-workout-shaker-gym---vaso-para-proteina---botella-mezcladora-de-coctelera--tapa-hermética-antiderrame---protein-vaso-miliar-25oz",
+            "description": "Acerca de este artículo\nTU SHAKER IDEAL | Nuestro shaker de 25oz garantiza una mezcla perfecta, libre de grumos, ideal para proteína, pre workout y otras bebidas nutritivas, asegurando la máxima absorción de nutrientes.\nDISEÑO ANTIDERRAME | Con una tapa hermética especialmente diseñada, evita derrames molestos, haciéndolo el vaso shaker perfecto para llevar al gym, trabajo o cualquier lugar sin preocupaciones.\nDURABILIDAD Y ESTILO | Fabricado en color negro con materiales de alta calidad, este shaker no solo es resistente y duradero, sino también un accesorio moderno y estilizado para complementar tu look deportivo.\nMANTIENE LA TEMPERATURA | Gracias a su construcción de acero inoxidable de doble pared, este shaker mantiene la temperatura de tus bebidas por más tiempo, ya sea frío o caliente.\nERGONOMÍA Y COMODIDAD | Su diseño permite un agarre firme y cómodo, facilitando el mezclado de tus bebidas. Además, es fácil de limpiar y el compañero perfecto para tu rutina diaria de ejercicios.\n›\nVer los detalles del producto",
+            "price": 468.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/71fOgqlUO3L._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 12,
+        "fields": {
+            "title": "Baboo CREATINA Monohidratada PREMIUM 5g 100 Servicios 500g, Sin Sabor, Pre Workout, Alto Rendimiento, Alta Pureza, Pre Entreno",
+            "slug": "baboo-creatina-monohidratada-premium-5g-100-servicios-500g-sin-sabor-pre-workout-alto-rendimiento-alta-pureza-pre-entreno",
+            "description": "Acerca de este artículo\nCreatina Monohidratada PREMIUM Alta Absorsion\nBote de 500g con Cuchara incluida\nSe disuleve perfectamente, 5g de Creatina Pura en cada Dosis\n›\nVer los detalles del producto",
+            "price": 329.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61SWR--q+bL._AC_SY606_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 13,
+        "fields": {
+            "title": "ProsourceFit Exercise Puzzle Mat, EVA Foam Interlocking Tiles Protective and Cushion Flooring for Gym Equipment, Exercise and Play Area",
+            "slug": "prosourcefit-exercise-puzzle-mat-eva-foam-interlocking-tiles-protective-and-cushion-flooring-for-gym-equipment-exercise-and-play-area",
+            "description": "Acerca de este artículo\nProtective Exercise Flooring - Durable, non-skid textured squares and tiles that cover and protect your floor or even carpet while creating a comfortable workout room with exercise accessories or as a play mat for children.\nEasy Assembly – Lightweight interlocking foam tiles connect quickly and easily and can be disassembled just as simply for quick storage\nVersatile – The water-resistant, noise-reducing design is easy-to-clean, great for indoor purposes like in garages as a protector, gyms, a home fitness room, or even children’s play areas as a playmat.\nCovers 48 Sq Ft - Each tile measures 24 in x 24 in x ½ in - thick from the highest point of the texture; Includes 12 tiles with end borders for a polished look. Care: Apply warm water and dish soap with a soft cloth or towel and air dry.\nHigh Quality Foam - High-density EVA foam mat provides excellent support and cushion; Contains NO toxic phthalates. Excellent alternative to rubber gym mats.\n›\nVer los detalles del producto",
+            "price": 780.01,
+            "imageUrl": "https://m.media-amazon.com/images/I/81fN-vJAKUL._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 14,
+        "fields": {
+            "title": "Arm Blaster para Bíceps Lanzador de Blaster Brazo Curl Tríceps Constructor Muscular, Aislador de Soporte Rizo Ajustable Tablero para Gimnasio Casa Fitness Culturismo Fuerza de Ejercicio",
+            "slug": "arm-blaster-para-bíceps-lanzador-de-blaster-brazo-curl-tríceps-constructor-muscular-aislador-de-soporte-rizo-ajustable-tablero-para-gimnasio-casa-fitness-culturismo-fuerza-de-ejercicio",
+            "description": "Acerca de este artículo\nDirige y aísla los músculos del bíceps: Aísla tus bíceps y tríceps con nuestro lanzador de brazo premium que te permite maximizar las ganancias musculares de bíceps y tríceps bloqueando tus codos en la posición perfecta. Blaster brazo ayuda a quitar todos y cada uno de los columpios para que puedas centrarte en una contracción completa en la parte superior de cada repetición.\nFortalece brazos, hombros y espalda： Esta pistola de bíceps es ideal para culturistas, levantadores de pesas o incluso atletas de CrossFit que quieren obtener brazos más fuertes, bíceps y hombros que crean ganancias de fuerza para otros movimientos comunes.El tablero de ejercicio se puede utilizar con una barra de rizo e-z (barra de cámara), una barra recta o mancuernas.\nCorrea ajustable: La hebilla de acero resistente permite flexibilidad y ajuste para mantener una postura adecuada de acuerdo con todos los tipos de cuerpo individuales mientras aísla los brazos.no esperes a que te vuelvas en el gimnasio para el banco de predicadores. Nuestro elegante constructor muscular tiene un diseño elegante que puede caber fácilmente en tu bolsa de gimnasio .\nDiseño contorneado y ajustable: Creado por expertos en fitness, nuestra pistola de rizos cuenta con almohadillas gruesas acolchadas para los codos y acolchado de espuma para el cuello para mejorar la seguridad y la comodidad, así como una correa totalmente ajustable de la blaster brazo para soportar levantadores de hombres o mujeres.\nBomba perfecta: La bomba de bíceps que obtendrás al realizar 2 a 3 ejercicios con nuestro Blaster de brazo negro es diferente a cualquier bomba de bíceps que hayas experimentado antes, tus bíceps se verán masivos y se sentirán como si estuvieran a punto de reventar.\n›\nVer los detalles del producto",
+            "price": 579.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61AmI3ZqaVL._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 15,
+        "fields": {
+            "title": "B Life Kit 5 Toallas de Microfibra Deportivas | Súper Absorbentes y de Secado Rápido | Color Negro/Gris | Fácil de Transportar | para Gym y Natación.",
+            "slug": "b-life-kit-5-toallas-de-microfibra-deportivas--súper-absorbentes-y-de-secado-rápido--color-negrogris--fácil-de-transportar--para-gym-y-natación",
+            "description": "Acerca de este artículo\n¡Disfruta de la calidad superior de Sport Towel B Life! Estas 5 toallas de microfibra súper absorbentes y de secado rápido son perfectas para usar mientras haces ejercicio.\nCon un tamaño ideal de 40 cm x 80 cm, cada toalla es ligera, compacta y fácil de transportar. Sus materiales de alta calidad ofrecen una suavidad excepcional, gran resistencia y no dejan restos de pelusa.\nIncluye 3 toallas color negro y 2 gris. Además, su empaque se convierte en una práctica bolsa, un excelente acompañante para tus entrenamientos.\nLavar con agua a temperatura de 30°C con jabón o detergente. No usar cloro. Secar a la sombra. No planchar. No limpiar en seco\n›\nVer los detalles del producto",
+            "price": 269.78,
+            "imageUrl": "https://m.media-amazon.com/images/I/61xWJCXlhcL._AC_SY450_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 16,
+        "fields": {
+            "title": "SKDK Correas de levantamiento de silicona antideslizante ,Straps Para Gym, Levantamiento de Pesas,muñequeras gym straps para gym mujer, hombres, levantamiento de pesas, culturismo, Xfit, entrenamiento de fuerza",
+            "slug": "skdk-correas-de-levantamiento-de-silicona-antideslizante-straps-para-gym-levantamiento-de-pesasmuñequeras-gym-straps-para-gym-mujer-hombres-levantamiento-de-pesas-culturismo-xfit-entrenamiento-de-fuerza",
+            "description": "Acerca de este artículo\nALTA CALIDAD: Las correas de alta densidad aseguran que se pueda soportar suficiente fuerza, las líneas dobles para caminar aumentan la durabilidad, nunca se rasgarán, rasgarán ni se desmoronarán como otras correas hechas de algodón barato\nDISEÑO ÚNICO: La parte de la muñeca tiene una almohadilla de resistencia de 5 mm para proteger la muñeca de lesiones, y el cabestrillo tiene silicona antideslizante que puede evitar que el dispositivo se deslice\nAMPLIAMENTE APLICABLE: La banda de agarre de las correas de elevación es un accesorio de fitness indispensable para el gimnasio, se puede usar en muchos aparatos de fitness como pesas, mancuernas, pesas rusas, etc\nSEGURIDAD HECHA SIMPLE: ¡Potencia tu entrenamiento de fuerza con tus correas de levantamiento de pesas de SKDK! Asegure un agarre fuerte y estable con estas correas de peso cuando sus manos estén sudorosas sin preocuparse por la tiza desordenada o los callos rasgados\nPOSVENTA SIN PREOCUPACIONES: Si tiene alguna pregunta sobre nuestra correa de elevación, contáctenos y le responderemos lo antes posible\n›\nVer los detalles del producto",
+            "price": 149.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/71uR-wVYS4L._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 17,
+        "fields": {
+            "title": "Raganet, Banco Fitness Multiposiscion, Banco de Addominales con 2 Ligas Incluidas, Asiento de Pesas Ajustable en 7 Posiciones, Soporta Hasta 250Kg, Negro",
+            "slug": "raganet-banco-fitness-multiposiscion-banco-de-addominales-con-2-ligas-incluidas-asiento-de-pesas-ajustable-en-7-posiciones-soporta-hasta-250kg-negro",
+            "description": "Acerca de este artículo\nBanco Fitness Multiposiscion: Ajustable en 7 posiciones diferentes, Completamente Plegable, Soporta Hasta 250Kg, Base Antideslizante, Inlcuye 2 Ligas\nConstrucción robusta: equipo de fitness con soporte de elevación fabricado con acero de alto grado y acabado con recubrimiento en polvo resistente a los arañazos para soportar las rutinas de ejercicio más duras.Capacidad de carga: 580 libras.\nBanco de pesas ajustable: puede ajustar fácilmente la posición para que se adapte a usted tirando del PERNO RÁPIDO, que luego se bloqueará automáticamente para mayor seguridad.\nDiseño cómodo: la parte trasera cubierta de cuero PU es antideslizante y resistente al desgaste, además de cómoda y transpirable. Acolchado con espuma, reduce aún más el riesgo de tensión muscular en la espalda.\nAhorra espacio: el banco de ejercicios plegable se puede ensamblar de manera sencilla y es fácil de transportar y almacenar. Puedes guardarlo prácticamente en cualquier lugar.\n›\nVer los detalles del producto",
+            "price": 1499.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61KSbvpk5+L._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 18,
+        "fields": {
+            "title": "Banco de peso ajustable – Bancos de peso utilitario para entrenamiento de cuerpo completo, plegable plano/inclinación/declive banco multiusos para gimnasio en casa",
+            "slug": "banco-de-peso-ajustable--bancos-de-peso-utilitario-para-entrenamiento-de-cuerpo-completo-plegable-planoinclinacióndeclive-banco-multiusos-para-gimnasio-en-casa",
+            "description": "Acerca de este artículo\n- - -\nBanco de pesas ajustable: El banco de pesas ajustable tiene 7 posiciones para el respaldo acolchado para satisfacer todas tus necesidades cuando entrenas. El estante de pesas ajustable es ideal para entrenar y ejercitar el pecho, hombros, espalda, abdominales y mucho más para el gimnasio en casa.\nDiseño cómodo y ergonómico: El cómodo asiento con acolchado de espuma de alta densidad sujeta el cuerpo firmemente y reduce la fatiga muscular durante el entrenamiento. Este banco de pesas es de cuero suave y está relleno de espuma densa por lo que es cómodo para hacer múltiples ejercicios.\nFácil de ensamblar: En su mayor parte, el banco está preensamblado para una mayor practicidad y viene con herramientas de instalación. Puedes terminar de ensamblar rápidamente y disfrutar de tu entrenamiento con banco en casa.\nTamaño y ahorra espacio: Se puede plegar y guardar. Tamaño plegado: 131 cm x 34 cm x 28 cm. Dimensiones extendido: 131 cm de largo x 34 cm de ancho x 80 cm de alto. El banco de pesas ajustable es fácil de ensamblar y de transportar y guardar.\n›\nVer los detalles del producto",
+            "price": 2699.99,
+            "imageUrl": "https://m.media-amazon.com/images/I/718oh5cdifL._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 19,
+        "fields": {
+            "title": "ProsourceFit Estación de Soporte de inmersión, Prensa de Barra de Cuerpo Resistente con Conector de Seguridad para tríceps, dominadas, Flexiones, L-Sits",
+            "slug": "prosourcefit-estación-de-soporte-de-inmersión-prensa-de-barra-de-cuerpo-resistente-con-conector-de-seguridad-para-tríceps-dominadas-flexiones-l-sits",
+            "description": "Acerca de este artículo\nBUILD UPPER BODY STRENGTH – Strengthen your upper body with one versatile dip stand. Use your body weight to build stronger muscles. Condition with triceps dips, L-sit holds, push-ups and more on the upper and lower-level handles.\nVERSATILE & ADJUSTABLE – Built with versatility in mind with 2 pairs of handles on the upper level and lower level for endless possibilities of exercises. For taller athletes, the stand offers 8 height positions between 39\"- 51\"\nNON-SLIP GRIP – Train with ultimate stability. The foam padding on all 4 handles offer comfort during exercises while also providing a non-slip grip when workouts get sweaty. The anti-slip foot pads keep the dip stand in place while you train and protects your floors.\nHEAVY DUTY STRUCTURE – Made from heavy-duty steel, experience superior stability during your most intense workouts. The steel structure is designed for safety and security with 400 lb weight capacity.\n›\nVer los detalles del producto",
+            "price": 1350.81,
+            "imageUrl": "https://m.media-amazon.com/images/I/61WN-jzGMDL._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 20,
+        "fields": {
+            "title": "Accesorios de Polea de Cable para Ejercicio en Casa,Combo de Accesorios para Poleas de Gym, Agarres y Equipos de Gimnasio,Mango en D, Cuerda de tríceps y 3 Alpinistične zaponke",
+            "slug": "accesorios-de-polea-de-cable-para-ejercicio-en-casacombo-de-accesorios-para-poleas-de-gym-agarres-y-equipos-de-gimnasiomango-en-d-cuerda-de-tríceps-y-3-alpinistične-zaponke",
+            "description": "El juego completo incluye: 1 Cuerda para tríceps, 1 Asa en V ,3 Hebillas de escalada y 1 bolsa de almacenamiento . Diseño universal que se adapta a la mayoría de poleas de gimnasio.\nMango en D: fabricado en acero macizo de alta calidad con acabado cromado y sin bordes afilados; las empuñaduras ergonómicas de goma texturizada añaden durabilidad y proporcionan una fuerza equilibrada a los brazos durante los entrenamientos.Los rodillos giratorios de 360° y los orificios de 0,6\" se adaptan fácilmente a cualquier sistema de gimnasio universal para un entrenamiento más versátil y polivalente.\nCuerda de tríceps:hecha de cuerda trenzada de nailon fuerte y equipada con grandes bloques de plástico en el extremo de la cuerda para mejorar el rendimiento y evitar resbalones o deslizamientos mientras practicas. Cuerda más larga de 35 pulgadas y capacidad de peso de 500 libras, perfecta para pull-downs, prensas de tríceps, filas verticales, rizos de barra recta y mucho más.\nHebillas De Montañismo: El Juego Viene Con 3 Hebillas De Montañismo, Hechas De Acero Inoxidable 304, Duraderas, Sin Bordes Afilados, Se Abre y Se Cierra Muy Suave Como La Seda, Con Una Capacidad De Carga Máxima De 400Lbs, Utilizado Para Fitness, Adecuado Para Camping, Senderismo, Mochilero, y Otras Actividades Múltiples.\nEntrenamiento múltiple:Ideal para desarrollar espalda, hombros, antebrazos, tríceps y bíceps con ejercicios de remo con cable sentado. También permite trabajar ambos brazos al mismo tiempo, ¡lo que lo convierte en el conjunto de accesorios de gimnasio ideal!\n›\nVer los detalles del producto",
+            "price": 342.32,
+            "imageUrl": "https://m.media-amazon.com/images/I/71YfU0PDdRL._AC_SX425_.jpg",
+            "category": "GYM",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 21,
+        "fields": {
+            "title": "Pantalones cortos moldeadores de cintura alta para mujer, sin costuras, ropa interior con control de abdomen, cómodas bragas moldeadoras de cuerpo, opciones multicolores",
+            "slug": "pantalones-cortos-moldeadores-de-cintura-alta-para-mujer-sin-costuras-ropa-interior-con-control-de-abdomen-cómodas-bragas-moldeadoras-de-cuerpo-opciones-multicolores",
+            "description": "Detalles del producto\nTipo de tejido\nMezcla de nailon de licra\nInstrucciones de cuidado del material\nLavar a mano en agua fría, secar en plano, no usar blanqueador\nAcerca de este artículo\nDiseño de cintura alta: pantalones cortos moldeados sin costuras con cintura alta que proporcionan un excelente control de abdomen y silueta suave\nTamaño versátil: disponible en un rango de tamaño incluido de S a 6XL para adaptarse cómodamente a diferentes tipos de cuerpo\nOpciones de color: múltiples opciones de color disponibles, incluyendo rojo, gris y nude para que coincida con varios atuendos y preferencias\nAjuste cómodo: construcción sin costuras que garantiza comodidad durante todo el día mientras que proporciona un apoyo eficaz para moldear\nControl objetivo: las zonas de compresión estratégicas ayudan a dar forma y suavizar los muslos y la sección media para una apariencia refinada",
+            "price": 458.72,
+            "imageUrl": "https://m.media-amazon.com/images/I/41o0gHQnYgL._AC_SX425_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 22,
+        "fields": {
+            "title": "Mujeres Suave Bufanda de Cuadrícula Chal Pashmina Estolas Mantos",
+            "slug": "mujeres-suave-bufanda-de-cuadrícula-chal-pashmina-estolas-mantos",
+            "description": "Acerca de este artículo\nMaterial de Alta Calidad: Esta Chal para Mujer está bien hecho de imitación superior de cachemira, buena combinación de 50% poliéster y 50% acrílico, extremadamente suave y agradable para la piel, difícil de desvanecer y pelusa. Atención de lavado: lavar a mano, no usar agua caliente.\nTalla Única: El tamaño de esta Pashminas para Mujer es sobre 130 x 155CM, peso sobre 450g, talla única para la mayoría de mujeres de diferentes formas corporales, el peso ultraligero mantiene el calor sin perder la sensación de elegancia, mostrar su elegancia y encanto únicos.\nDiseño Elegante y Con Eestilo: Capa de mujer con tapeta abierta en la parte delantera y diseño de cuello en V, y borde cosido exquisito que agrega un aspecto a la elegancia, se puede utilizar como manto, chal, chaqueta, bufanda, manta, estolas, etc.\nChal de Punto sin Mangas: Estolas para Mujer adopta un diseño tanto positivo como negativo, por lo que no tiene que estar limitado a una sola dirección. Combina perfectamente con los vestidos, faldas, leggings, botas, leggings, etc. de tu armario, deja que muestres su belleza sin dejar de estar cálida.\nMúltiples Opciones: Nuestros Ponchos para Mujeres tienen muchos colores para que elija, muy adecuado para citas, fiestas, viajes, compras, hogar, escuela y oficina etc. También es la opción de regalo perfecta para el día de San Valentín, el día de la madre, Navidad, Halloween y cumpleaños.",
+            "price": 349.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61IoiIDVuuL._AC_SX522_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 23,
+        "fields": {
+            "title": "Blusa Deportiva Mujer Tank Top Sport Dama Playera Sin Mangas Ropa Gym Yoga Pilates",
+            "slug": "blusa-deportiva-mujer-tank-top-sport-dama-playera-sin-mangas-ropa-gym-yoga-pilates",
+            "description": "Detalles del producto\nTipo de tejido\n100% Poliéster\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nPull on\nEstilo de cuello\nCuello redondo\nPaís de origen\nMéxico\nAcerca de este artículo\nPonemos mucha atención a los comentarios de los clientes, con la finalidad de ajustar cada detalle y poder garantizar la mejor calidad y comodidad posible en cada una de nuestras prendas.\nMaterial: Tela ligera, microfibra 100% Poliéster Dry-Fit, lo que permite secarse rápidamente después de una buena rutina de ejercicio.\nCaracterísticas: Fit Regular, ni muy ajustado ni muy holgado, ideal para poder ejercitarte libremente sin que te estorbe y sin que te sientas apretada.\nCaracterísticas 2: Top sin mangas, hombros ligeramente caídos, el complemento ideal para tu outfit.",
+            "price": 245.18,
+            "imageUrl": "https://m.media-amazon.com/images/I/61lk3ljcAeL._AC_SX425_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 24,
+        "fields": {
+            "title": "Lati Fashion - Paquete de 3 camisones para mujer, de algodón suave, manga corta, ropa de dormir, casual, talla S-3X",
+            "slug": "lati-fashion---paquete-de-3-camisones-para-mujer-de-algodón-suave-manga-corta-ropa-de-dormir-casual-talla-s-3x",
+            "description": "Detalles del producto\nTipo de tejido\n60 % Algodón, 40 % Poliéster\nInstrucciones de cuidado del material\nLavado a máquina\nAcerca de este artículo\nDisfruta de un sueño cómodo: ¿Buscas un pijama cómodo y suave para mantenerte cómodo por la noche? Nuestros camisones de algodón suave para mujer son el camino a seguir. Ligero, ventoso, con un ajuste cómodo, estos camisones se convertirán en tu elección favorita de pijama\nTela de algodón suave: queremos que experimentes una comodidad increíble y es por eso que nuestros camisones y camisones para mujer están hechos con 60% algodón y 40% poliéster, la mezcla perfecta que hace que nuestras camisas de noche sean suaves y transpirables, pero también duraderas y resistentes al desgaste.\nLigero y acogedor: los camisones para mujer son súper suaves y transpirables, con un diseño ligero que ofrece una comodidad duradera. Abraza el acogedor abrazo de nuestro vestido de noche para mujeres y disfruta de un sueño reparador y tranquilo.\nElegante vestido de manga corta: este vestido de dormir para mujer cuenta con un cómodo diseño de manga corta con un ajuste cómodo y holgado que deja suficiente espacio para un movimiento sin restricciones. Ya sea que lo uses como un vestido de dormir, camisón de maternidad o ropa de descanso para días relajantes, nuestro camisón de algodón es la opción ideal.\nPráctico paquete de 3: nuestros vestidos de noche para mujer para dormir llegan en un práctico juego de 3 vestidos surtidos, disponibles en una amplia gama de diseños. Disfruta de la calidez de nuestros pijamas y mantén un repuesto a mano para una comodidad duradera",
+            "price": 733.53,
+            "imageUrl": "https://m.media-amazon.com/images/I/81gejMrv9IL._AC_SX385_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 25,
+        "fields": {
+            "title": "Blusas de Mujer de Moda con Manga Larga de Encaje Mujeres Casual Playera Elegantes Camiseta Basicos Dama Tops Cuello Redondo",
+            "slug": "blusas-de-mujer-de-moda-con-manga-larga-de-encaje-mujeres-casual-playera-elegantes-camiseta-basicos-dama-tops-cuello-redondo",
+            "description": "Detalles del producto\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nBotón\nEstilo de cuello\nCuello Redondor\nTipo de manga\nManga larga\nAcerca de este artículo\n【Tela suave】La combinación de tejido de gofre y encaje hace que las blusa mujer sean más elegantes y únicas. Es suave al tacto y tiene una buena transpirabilidad, adecuada para todo tipo de clima.\n【Detalles】Blusas elegantes para mujer con mangas largas de encaje y botones negros únicos en los puños. Color liso, cuello redondo, corte ajustado y diseño de hombros rectos.\n【Textura De Girasol】Las mangas de encaje de las camisas para mujer están diseñadas con textura de girasol, lo que le da a las personas una sensación cálida y enérgica, lo que mejora efectivamente la combinación general.\n【Combinación】Las camiseta manga larga mujer se pueden combinar perfectamente con jeans, pantalones y faldas. Cuando el clima se vuelve más frío, use una chaqueta de capas, perfecta para cualquier temporada. Es un básico del guardarropa.\n【Ocasión】Esta playera manga larga mujer es adecuada para uso diario, oficina, compras, actividades formales de negocios y otras ocasiones informales. Es una prenda versátil para ocasiones semiformales.",
+            "price": 189.04,
+            "imageUrl": "https://m.media-amazon.com/images/I/71MCCFPNiEL._AC_SX342_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 26,
+        "fields": {
+            "title": "Conjuntos de Dos Piezas para Mujer,Conjuntos de Verano para Descanso，Con Top de Cuello Redondo y Pantalones Deportivos con Bolsillos，Cómodo y Ligero",
+            "slug": "conjuntos-de-dos-piezas-para-mujerconjuntos-de-verano-para-descansocon-top-de-cuello-redondo-y-pantalones-deportivos-con-bolsilloscómodo-y-ligero",
+            "description": "Detalles del producto\nTipo de tejido\nAlgodón Mezclado\nInstrucciones de cuidado del material\nLavar A Máquina Con Agua Fría, No Usar Blanqueador, Secar En Tendedero, Planchar A Temperatura Baja\nPaís de origen\nChina\nAcerca de este artículo\nMaterial: Este traje de dos piezas para mujer, De verano 2025, Está confeccionado con telas de alta calidad. Está confeccionado con un tejido espaciador ligero, Suave y fluido, que le da una sensación sedosa y agradable al tacto. Este traje deportivo te hará sentir suave y elegante.\nParte Superior: Este conjunto casual de dos piezas para mujer incluye una parte superior de cuello redondo. Esta parte superior básica, Bonita y holgada tiene un largo medio que cubre el abdomen y combina a la perfección estilos deportivos e informales para un look único y moderno.\nPantalones: Este elegante conjunto para mujer incluye pantalones con cintura elástica, Perneras anchas, Cordón elástico y dos prácticos bolsillos laterales a ambos lados, Ideales para guardar el móvil, Las llaves, Las monedas y el pintalabios. Ya no tendrás que preocuparte por dónde poner el móvil mientras trabajas o haces ejercicio.\nOcasiones: La ropa casual de verano es ideal para diversas ocasiones, Como uso diario, Actividades en interiores y exteriores, Correr, Viajar, Vacaciones, Casa, Oficina, Trabajo, Citas, Compras, Fitness y deportes. Este práctico conjunto de dos piezas es versátil y ofrece estilo y comodidad en todos los aspectos de tu vida.\nConsejos: Este conjunto deportivo para mujer es un conjunto femenino y elegante. Consulta nuestra tabla de tallas antes de comprar (Debido a la medición manual, Puede haber un margen de error de 1 a 2 cm). Cuidado de la prenda: Nuestro conjunto deportivo de dos piezas para mujer es fácil de cuidar. Recomendamos lavar a máquina, no usar lejía, No secar en secadora y planchar a baja temperatura. No lavar en seco. Recomendamos secar al aire para obtener mejores resultados.",
+            "price": 549.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61K2qwPYWyL._AC_SX425_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 27,
+        "fields": {
+            "title": "Pack de 2 Piezas Leggings térmicos para Mujer Pantalones Deportivos atléticos de Yoga Entrenamiento mallones",
+            "slug": "pack-de-2-piezas-leggings-térmicos-para-mujer-pantalones-deportivos-atléticos-de-yoga-entrenamiento-mallones",
+            "description": "Detalles del producto\nInstrucciones de cuidado del material\nLavar a máquina\nTipo de cierre\nSin cierre\nEstilo de cintura\nTiro alto\nEstilo de pierna\nCeñido\nAcerca de este artículo\nConfort y Comodidad. Máxima flexibilidad y buena elasticidad, perfecta para emparejar con tu figura y aportar firmeza haciéndote lucir increíble mientras te mantienes cómoda.\nDiseño destacado, agradable a la vista y sumamente versátil para cada ocasión, luce espectacular sin sacrificar comodidad.\nPerfecta para todo tipo de ocasión tanto deportiva como casual, siéntete libre de usarla para tus entrenamientos o deportes, así como también para pasar una tarde en casa o una salida casual.\nPaquete variado, con lo cual podrás contar con varias licras para cada día, y combinar con todos tus outfits.",
+            "price": 122.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51E0UuyLBtL._AC_SY445_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 28,
+        "fields": {
+            "title": "AOHITE Mujeres Adultas Conjunto de Ropa Casual Beige: Camiseta de Manga Larga con Cuello Redondo y Pantalones Anchos",
+            "slug": "aohite-mujeres-adultas-conjunto-de-ropa-casual-beige-camiseta-de-manga-larga-con-cuello-redondo-y-pantalones-anchos",
+            "description": "Detalles del producto\nTipo de tejido\n52 % viscosa + 28 % poliéster + 20 % nailon\nInstrucciones de cuidado del material\nLavar a máquina\nAcerca de este artículo\nConjunto de suéter de punto de 2 piezas para mujer, cómodo de llevar todo el día\nplayera sin botones, sudadera de cuello alto con manga larga, hombros caídos, puños acanalados elásticos\nPantalones largos: pantalones de pierna ancha con cintura elástica, ajuste relajado, adecuado para todas las formas del cuerpo\nElegante conjunto para llevar en casa como ropa de dormir o al aire última intervensión en la calle, comprar como sudadera de punto\nLos trajes de 2 piezas están hechos de telas de alta calidad agradables al tacto para que te sientas más cómoda. Se puede llevar como traje de correr, traje de pijama, traje de ejercicio, traje de servicio en casa y otras ocasiones informales",
+            "price": 529.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51Z6SDvnlBL._AC_SY445_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 29,
+        "fields": {
+            "title": "Conjunto de 2 piezas de punto para mujer, suéter de manga larga, suéter de pierna ancha, pantalones deportivos",
+            "slug": "conjunto-de-2-piezas-de-punto-para-mujer-suéter-de-manga-larga-suéter-de-pierna-ancha-pantalones-deportivos",
+            "description": "Detalles del producto\nTipo de tejido\nTejido: 70% viscosa, 30% nailon\nInstrucciones de cuidado del material\nLavar a mano\nAcerca de este artículo\nNueva colección: conjuntos de suéter de punto elegantes de dos piezas para mujer\nMaterial: los conjuntos de suéter de punto para mujer están hechos de tela de alta calidad, suave y cómodo de llevar\nTops sin pulóveres: suéter de manga larga para mujer con cuello redondo, hombros caídos y dobladillo lateral dividido. Este es un artículo imprescindible para los amantes del atuendo\nPantalones de descanso: pantalones de vestir de punto de pierna ancha para mujer con cintura alta, cintura elástica cómoda para darte una excelente experiencia de uso\nOcasión: los trajes de dos piezas de otoño para mujer son ideales para el uso diario, compras, fiestas, día festivo, etc. También se puede llevar en casa como ropa de descanso de pijama, disfruta de un momento acogedor",
+            "price": 388.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61Pf7iG8U2L._AC_SX342_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 30,
+        "fields": {
+            "title": "Conjunto deportivo de 2 piezas para mujer, sudadera de gran tamaño con medio cierre, pantalones deportivos de pierna ancha, atuendo para descansar",
+            "slug": "conjunto-deportivo-de-2-piezas-para-mujer-sudadera-de-gran-tamaño-con-medio-cierre-pantalones-deportivos-de-pierna-ancha-atuendo-para-descansar",
+            "description": "Detalles del producto\nTipo de tejido\n50% rayón, 45% poliéster, 5% elastano\nInstrucciones de cuidado del material\nLavar a máquina\nPaís de origen\nChina\nAcerca de este artículo\nDiseño moderno: este chándal de descanso incluye una sudadera con media cierre y pantalones deportivos de cintura alta de pierna ancha. Con puños acanalados, cuello en V, hombro caído, mangas largas con diseño de agujeros para el pulgar y bolsillos espaciosos, crea sin esfuerzo un estilo de gran tamaño y un aspecto chic para ti.\nGuía de tallas: XS = US (0-2), S = US (4-6), M = US (8-10), L = US (12-14), XL = US (16-18), XXL = US (20-22). Consulta la tabla de tallas antes de realizar el pedido. Presentamos regularmente nuevos colores para mantener tu estilo fresco. Mantente atento a las actualizaciones que mejorarán tu clóset.\nOcasión: este juego de sudor es tu elección preferida, ideal para una amplia gama de entornos. Ya sea para uso diario, correr, viajes, oficina, citas, compras, gimnasio, deportes o actividades de fitness, este práctico atuendo de 2 piezas complementa cada aspecto de tu vida con estilo y comodidad.\nTela acogedora: este juego de chándal cuenta con un material suave, elástico y de sensación última intervensión que es sedoso al tacto y cómodo de llevar. El juego de ropa de descanso de 2 piezas ofrece estilo y calidez, por lo que es el atuendo ideal para tus salidas. Mantente a la moda y cómodo durante toda la temporada.\n【Todo combinado】Eleva tu moda de otoño e invierno con nuestro conjunto a juego para mujer. Este atuendo de 2 piezas se puede vestir con botines o mantener casual con zapatillas deportivas. Además, la parte superior e inferior se pueden llevar por separado, ofreciendo infinitas posibilidades de estilo.",
+            "price": 341.9,
+            "imageUrl": "https://m.media-amazon.com/images/I/61j08sMx1nL._AC_SY445_.jpg",
+            "category": "Womens clothing",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 31,
+        "fields": {
+            "title": "Maybelline Instant Age Rewind Corrector facial 3 en 1, Tono Neutralizer, 6ml - Maquillaje que borra ojeras y líneas finas, cubre imperfecciones, corrige, contornea e ilumina, cobertura media, hasta 12hrs de uso hidratante",
+            "slug": "maybelline-instant-age-rewind-corrector-facial-3-en-1-tono-neutralizer-6ml---maquillaje-que-borra-ojeras-y-líneas-finas-cubre-imperfecciones-corrige-contornea-e-ilumina-cobertura-media-hasta-12hrs-de-uso-hidratante",
+            "description": "Acerca de este artículo\nEste corrector para las ojeras y líneas finas crea al instante un contorno de ojos radiante y refrescado.\nGracias a su fórmula con Bayas de Goji, hidrata hasta 12hs el contorno de ojos.\nTrata y reafirma ojeras y bolsas.\nSu aplicador en esponja cubre fácilmente con precisión y consigue una cobertura que no reseca ni cuartea.\nCorrige, Contornea e Ilumina tu rostro con Instant Age Rewinder de Maybelline New York.\n›\nVer los detalles del producto",
+            "price": 126.69,
+            "imageUrl": "https://m.media-amazon.com/images/I/51NcVrv5WRL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 32,
+        "fields": {
+            "title": "Maybelline Mascara de pestañas Sky High A prueba de agua, 6ml - Brinda alargamiento y volumen hasta por 12H, fórmula con extracto de bambú, levanta las pestañas desde la raíz, no deja grumos, waterproof",
+            "slug": "maybelline-mascara-de-pestañas-sky-high-a-prueba-de-agua-6ml---brinda-alargamiento-y-volumen-hasta-por-12h-fórmula-con-extracto-de-bambú-levanta-las-pestañas-desde-la-raíz-no-deja-grumos-waterproof",
+            "description": "Acerca de este artículo\nRimel con extracto de bambú, cepillo flexible que levanta las pestañas desde la raíz, waterproof, máximo alargamiento y no deja grumos\nPor Su Cepillo Super Flexible Logra Levantar Al Máximo Las Pestañas Desde La Raíz. ¡Con Resultados Al Instante!\nEsta Hecha Con Auténticas Fibras Extensoras Y Extracto De Bambú Que Cuidaran De Tus Pestañas Todo El Día\nPaso 1. Para Mejores Resultados, Desliza El Cepillo De La Raíz A La Punta De Las Pestañas. Paso 2. Repite El Primer Paso Hasta Lograr El Volumen Y Alargamiento Deseado. Paso 3. No Dejes Que La Mascara Se Seque Entre Capas.\nMascara A prueba de Agua\n›\nVer los detalles del producto",
+            "price": 200.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/61nkFl3MtqL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 33,
+        "fields": {
+            "title": "Secreto Herbal Agua Cosmética con Agua de Tea Tree, Caléndula y Ácido Hialurónico 250 ml",
+            "slug": "secreto-herbal-agua-cosmética-con-agua-de-tea-tree-caléndula-y-ácido-hialurónico-250-ml",
+            "description": "Acerca de este artículo\nEl Agua Cosmética Secreto Herbal combina Tea Tree, Caléndula y Ácido Hialurónico para limpiar, refrescar e hidratar profundamente la piel del rostro.\nEl tea tree ayuda a controlar imperfecciones y brotes, mientras la caléndula calma irritaciones, ideal para pieles mixtas, grasas o con tendencia al acné.\nRestaura la humedad natural de la piel sin obstruir poros. El ácido hialurónico retiene el agua y aporta una sensación suave y fresca al instante.\nApta para uso diario, incluso en pieles sensibles. Tonifica, equilibra el pH y deja la piel lista para el maquillaje o los pasos posteriores de tu rutina de cuidado.\nEnvase práctico para aplicar como tónico, bruma facial o refrescante a lo largo del día. Ideal para el bolso, rutina de skincare o después del ejercicio.\n›\nVer los detalles del producto",
+            "price": 51.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51Zn8YHDkNL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 34,
+        "fields": {
+            "title": "Secreto Herbal Agua Cosmética con Agua de Rosas, Lavanda y Colágeno 250 ml",
+            "slug": "secreto-herbal-agua-cosmética-con-agua-de-rosas-lavanda-y-colágeno-250-ml",
+            "description": "Acerca de este artículo\nEl Agua Cosmética Secreto Herbal combina Agua de Rosas, Lavanda y Colágeno para hidratar, calmar e iluminar la piel del rostro en cualquier momento del día.\nEl agua de rosas calma y equilibra, la lavanda relaja y purifica, mientras el colágeno ayuda a mejorar la elasticidad y firmeza de la piel con uso continuo.\nÚsala después de la limpieza facial, como tónico refrescante, fijador de maquillaje o bruma hidratante durante el día. No engrasa ni irrita.\nSin alcohol. Equilibra el pH de la piel, alivia el enrojecimiento y proporciona una sensación inmediata de frescura.\nFormato práctico y fácil de aplicar. Perfecta para el bolso, el tocador o llevar en la rutina diaria de skincare.\n›\nVer los detalles del producto",
+            "price": 51.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/41U4UUwAm-L._AC_SX425_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 35,
+        "fields": {
+            "title": "MIST JEWEL | Set Brochas de maquillaje bambu orgánicas estilo Kabuki ecologicas para maquillaje profesional kit (makeup brush set) | Aplica Polvos, Base, Blush en cara y ojos 11pcs (Bambú)",
+            "slug": "mist-jewel--set-brochas-de-maquillaje-bambu-orgánicas-estilo-kabuki-ecologicas-para-maquillaje-profesional-kit-makeup-brush-set--aplica-polvos-base-blush-en-cara-y-ojos-11pcs-bambú",
+            "description": "Acerca de este artículo\nJUEGO KIT ECOLÓGICO MIST JEWEL: Con 11pcs de Bambú natural, el conjunto de cepillos de ojos y cara incluye todo lo que necesitas para maquillaje profesional: Cepillos de sombra de ojos, lapiz de labios, cepillos de mezcla, pincel delineador de ojos, de cejas, correctores, pestaña, polvos, fijador. No contaminan el ambiente y son cruelty free.\nMATERIAL Y CALIDAD ORIGINAL: Juego de brochas estilo Kabuki de madera Bambú de pelo sintético ultra suave y firme de alta calidad, no utiliza pelo natural real (cruelty free). Fabricación y diseño original MIST JEWEL. El tamaño de cada brocha (brushes) es ideal para un agarre cómodo en la mano, fabricados a mano son únicas y distinguibles. ¡Llévalas a todos lados con su bolsa incluida y su tamaño ideal para viajes!\nPRODUCTOS/ USO: Es ideal para uso personal y regalos, perfecto para quienes buscan mantener un maquillaje perfecto y hacerlo con estilo para llevar tu maquillaje al siguiente nivel. Excelente para regalos de navidad, año nuevo, aniversario, madres, para la novia, mama y amiga.\nINCLUIDO: Make up brush set 11 pinceles para uso personal y profesional de maquillaje de belleza total Mist Jewel.\nGARANTÍA: En Mist Jewel nos comprometemos a la mejor calidad y servicio, si tu producto no cumple 100% con lo que esperabas responderemos inmediatamente!\n›\nVer los detalles del producto",
+            "price": 179.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/81AACSxMceL._AC_SX425_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 36,
+        "fields": {
+            "title": "Lápiz Labial Revlon Super Lustrous Glass Shine tono Rum raisin",
+            "slug": "lápiz-labial-revlon-super-lustrous-glass-shine-tono-rum-raisin",
+            "description": "Acerca de este artículo\nFormulado con una mezcla de ácido hialurónico, colágeno líquido y aloe\nInfusionado con polímeros de alto brillo para reflejar la luz\nLabial de textura suave y cremosa\nColor brillante y brillo cristalino: rellena, calma, suaviza y da color a tus labios\nBrillante como un gloss (sin sensación pegajosa) y suavizante como un bálsamo. Y es tan fácil de aplicar como un lápiz labial\n›\nVer los detalles del producto",
+            "price": 138.38,
+            "imageUrl": "https://m.media-amazon.com/images/I/51om1Xun7CL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 37,
+        "fields": {
+            "title": "Neutrogena Face Care Intensive Crema Hidratante Facial Mate 3 en 1 D Pantenol 100g",
+            "slug": "neutrogena-face-care-intensive-crema-hidratante-facial-mate-3-en-1-d-pantenol-100g",
+            "description": "Acerca de este artículo\nHidrata intensamente por 24 horas\nReduce la oleosidad de la piel\nBrinda un efecto primer instantaneo que prepara tu piel para el maquillaje\nFormulado con D- Pantenol (Pro Vitamina B5), Glicerina y Arginina\nLibre de aceites, textura primer de rápida absorción\nVolumen: 100.0 milliliters\n›\nVer los detalles del producto",
+            "price": 67.0,
+            "imageUrl": "https://m.media-amazon.com/images/I/51cH1voxKRL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 38,
+        "fields": {
+            "title": "Maybelline Instant Age Rewind Corrector facial 3 en 1, Tono Neutralizer, 6ml - Maquillaje que borra ojeras y líneas finas, cubre imperfecciones, corrige, contornea e ilumina, cobertura media, hasta 12hrs de uso hidratante",
+            "slug": "maybelline-instant-age-rewind-corrector-facial-3-en-1-tono-neutralizer-6ml---maquillaje-que-borra-ojeras-y-líneas-finas-cubre-imperfecciones-corrige-contornea-e-ilumina-cobertura-media-hasta-12hrs-de-uso-hidratante",
+            "description": "Acerca de este artículo\nEste corrector para las ojeras y líneas finas crea al instante un contorno de ojos radiante y refrescado.\nGracias a su fórmula con Bayas de Goji, hidrata hasta 12hs el contorno de ojos.\nTrata y reafirma ojeras y bolsas.\nSu aplicador en esponja cubre fácilmente con precisión y consigue una cobertura que no reseca ni cuartea.\nCorrige, Contornea e Ilumina tu rostro con Instant Age Rewinder de Maybelline New York.\n›\nVer los detalles del producto",
+            "price": 126.69,
+            "imageUrl": "https://m.media-amazon.com/images/I/51NcVrv5WRL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 39,
+        "fields": {
+            "title": "Bronceador Ojo de Mar | 100% Organico y Natural, Hecho a base de aceites | Bronceado brillante dorado duradero, para todo tipo de piel. Libre de crueldad y parabenos, 100 ml",
+            "slug": "bronceador-ojo-de-mar--100-organico-y-natural-hecho-a-base-de-aceites--bronceado-brillante-dorado-duradero-para-todo-tipo-de-piel-libre-de-crueldad-y-parabenos-100-ml",
+            "description": "Acerca de este artículo\n🌿 Ingredientes naturales: Aceite de Urucum, Aceite de Pepita de uva, Aceite de coco orgánico, Aceite de oliva extra virgen, Aceite de almendras dulces, Glitter cosmético orgánico.\n☀️Promueve un bronceado natural increíble 🌊 Fácil y rápido de aplicar ✨ Hidrata, nutre y suaviza la piel. 🇲🇽 Hecho en México en laboratorio certificado.\n🌟No irrita y es para todo tipo de piel | Puedes utilizarlo también en tu cabello\nVegano. Eco Friendly y Orgánico.\n›\nVer los detalles del producto",
+            "price": 439.12,
+            "imageUrl": "https://m.media-amazon.com/images/I/51BZnyiLCSL._AC_SX425_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 40,
+        "fields": {
+            "title": "TEIA COSMETICOS Tinta Multiusos para labios, mejillas y párpados con ingredientes naturales (Poesía)",
+            "slug": "teia-cosmeticos-tinta-multiusos-para-labios-mejillas-y-párpados-con-ingredientes-naturales-poesía",
+            "description": "Acerca de este artículo\nCruelty free, Libre de tóxicos, cosmética natural\nTipo de piel: Todo tipo de pieles\nEmpaquetado en un recipiente de metal 100% fácil de reciclar sin exceso de embalaje que de otro modo contribuiría a los residuos\n›\nVer los detalles del producto",
+            "price": 277.8,
+            "imageUrl": "https://m.media-amazon.com/images/I/51XIdD24jbL._AC_SY355_.jpg",
+            "category": "Cosmetics",
+            "featured": false,
+            "active": true,
+            "timestamp": "2025-11-11",
+            "is_digital": false
+        }
+    }
+]
