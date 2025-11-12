@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.js": "/ebac-ea-third-proyect/static/js/main.41a1d9eb.js",
-    "static/media/ChckoutPortade.jpg": "/ebac-ea-third-proyect/static/media/ChckoutPortade.c1274e9031bb5df54215.jpg",
-    "static/media/portadeLogin.jpg": "/ebac-ea-third-proyect/static/media/portadeLogin.85050d2d81f043f1d55e.jpg",
-    "static/media/registryImg.jpg": "/ebac-ea-third-proyect/static/media/registryImg.f6c94240e607345ebf0f.jpg",
-    "static/media/logoEcomm.jpg": "/ebac-ea-third-proyect/static/media/logoEcomm.e292615ac8293f0347de.jpg",
-    "index.html": "/ebac-ea-third-proyect/index.html",
-    "main.41a1d9eb.js.map": "/ebac-ea-third-proyect/static/js/main.41a1d9eb.js.map"
+    "main.js": "/e-commerce-completo/static/js/main.b4e1812b.js",
+    "static/media/portadeLogin.jpg": "/e-commerce-completo/static/media/portadeLogin.85050d2d81f043f1d55e.jpg",
+    "static/media/registryImg.jpg": "/e-commerce-completo/static/media/registryImg.f6c94240e607345ebf0f.jpg",
+    "static/media/logoEcomm.jpg": "/e-commerce-completo/static/media/logoEcomm.e292615ac8293f0347de.jpg",
+    "index.html": "/e-commerce-completo/index.html",
+    "main.b4e1812b.js.map": "/e-commerce-completo/static/js/main.b4e1812b.js.map"
   },
   "entrypoints": [
-    "static/js/main.41a1d9eb.js"
+    "static/js/main.b4e1812b.js"
   ]
 }

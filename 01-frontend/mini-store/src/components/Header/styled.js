@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const Svg = css`
   max-width: 50px;
@@ -14,15 +14,15 @@ const Svg = css`
   transition: background-color 0.3s ease-in-out;
 
   svg {
-      width: 80%;
-      min-width: 25px;
-      height: auto;
+    width: 80%;
+    min-width: 25px;
+    height: auto;
   }
   @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-      }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
     }
+  }
 `;
 
 const HeaderContainer = styled.header`
@@ -38,14 +38,13 @@ const HeaderContainer = styled.header`
 
   @media (max-width: 768px) {
     padding: 10px 10px;
-    picture{
+    picture {
       min-width: 90px;
-      h1{
+      h1 {
         /* display: none; */
-        font-size: .9rem;  
+        font-size: 0.9rem;
       }
     }
-
   }
 `;
 
@@ -65,20 +64,20 @@ const HeaderLogo = styled.picture`
   box-sizing: border-box;
   gap: 10px;
 
-  img{
+  img {
     width: 40%;
     max-width: 200px;
     min-width: 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
-    }
+  }
   h1 {
     font-size: 1.5em;
     margin-bottom: 10px;
     width: 100%;
     color: #d33636;
   }
-span{
+  span {
     color: #fff;
     font-weight: bold;
     font-style: italic;
@@ -86,7 +85,7 @@ span{
     border-radius: 10px;
     padding: 0 5px;
     text-wrap: nowrap;
-}
+  }
 `;
 
 const HeaderSearch = styled.div`
@@ -105,65 +104,67 @@ const HeaderSearch = styled.div`
     outline: none;
 
     &::-webkit-search-cancel-button {
-        cursor: pointer;
-        
-        &:hover {
-            opacity: 0.7;
-        }
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
-  
-  button {
+
+  i {
     text-wrap: nowrap;
     padding: 10px 0;
     border-radius: 5px;
     border: none;
+    background-color: rgba(255, 255, 255, 0.2);
   }
-
 `;
 
-
-const HeaderCart = styled.i`
-  ${Svg}
+const HeaderUser = styled.i`
   width: 5%;
+  height: 5%;
+  border-radius: 10px;
+  ${Svg}
+  padding: 5px;
+  button {
+    width: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      display: none;
+    }
+    button {
+      display: flex;
+      font-size: 0.8rem;
+    }
+  }
+`;
+
+const HeaderCart = styled.button`
+  ${Svg}
+  width: 10%;
   border-radius: 50%;
 
   span {
-        position: absolute;
-        top: -5px;
-        right: -10px;
-        background-color: red;
-        color: white;
-        border-radius: 50%;
-        padding: 2px 6px;
-        font-size: 17px;
-    }
-
-`;
-const HeaderUser = styled.i`
-    width: 5%;
-    height: 5%;
-    border-radius: 10px;
-    ${Svg}
-    p{
-      width: auto;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      font-style: italic;
-      margin: 0;
-    }
-
-  @media (max-width: 768px) {
-    svg{
-      display: none;}
-    p{
-      display: flex;
-      font-size: .8rem;
-    }
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 17px;
   }
-
-  
 `;
 
 export { HeaderLogo, HeaderContainer, HeaderSearch, HeaderUser, HeaderCart };

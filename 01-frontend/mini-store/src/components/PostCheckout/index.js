@@ -40,7 +40,7 @@ const PostCheckout = () => {
                 <div>
                   <h4>{item.title} </h4>
                   <p>
-                    ${item.price} &times; {item.quantity}
+                    ${item.price.toFixed(2)} &times; {item.quantity}
                   </p>
                 </div>
               </ItemDetails>

@@ -79,7 +79,7 @@ const ConfirmationStep = ({ selectedAddress, paymentMethod, prevStep }) => {
               <div>
                 <h4>{item.title}</h4>
                 <p>
-                  ${item.price} &times; {item.quantity}
+                  ${item.price.toFixed(2)} &times; {item.quantity}
                 </p>
               </div>
             </ItemDetails>
@@ -87,7 +87,7 @@ const ConfirmationStep = ({ selectedAddress, paymentMethod, prevStep }) => {
         ))}
       </ProductList>
       <p>
-        <strong>Total Amount:</strong> ${totalAmount}
+        <strong>Total Amount:</strong> ${totalAmount.toFixed(2)}
       </p>
       <Button type="button" onClick={prevStep} className="back small">
         Back

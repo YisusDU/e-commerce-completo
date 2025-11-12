@@ -30,11 +30,8 @@ const ProductHeader = () => {
   const accessToken = useSelector((state) => state.user.accessToken);
   const status = useSelector((state) => state.user.status);
   const user = useSelector((state) => state.user.currentUser);
-  let isLogin = null;
+  const isLogin = !!accessToken;
 
-  {
-    accessToken ? (isLogin = true) : (isLogin = false);
-  }
   useEffect(() => {
     // Solo lo llamamos si no lo hemos hecho antes (status 'idle')
     if (status === ASYNC_STATUS.PENDING) {
@@ -47,7 +44,7 @@ const ProductHeader = () => {
     navigate("/login");
   };
 
-  const handleCloseCart = () => {
+  const handleOpenCart = () => {
     dispatch(toggleCart());
   };
 
@@ -69,17 +66,17 @@ const ProductHeader = () => {
           placeholder="Type some item name..."
           onChange={handleSearch}
         />
-        <button>🔍</button>
+        <i>🔍</i>
       </HeaderSearch>
       <HeaderUser onClick={toggleLogin}>
         <SvgUser />
-        <p role="button" aria-label="user-name">
+        <button role="button" aria-label="user-name">
           {status === ASYNC_STATUS.FULFILLED && isLogin && user
             ? `${user?.username} logout`
             : "Guest, Login?"}
-        </p>
+        </button>
       </HeaderUser>
-      <HeaderCart onClick={handleCloseCart}>
+      <HeaderCart onClick={handleOpenCart}>
         <SVGCart />
         <span role="button" aria-label="cart-count">
           {cartItemsCount}
