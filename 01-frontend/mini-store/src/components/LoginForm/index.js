@@ -16,15 +16,15 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      // 2. Espera (await) a que el dispatch termine y usa .unwrap()
+      //  Espera (await) a que el dispatch termine y usa .unwrap()
       // 'responseData' será tu 'response.data' si tiene éxito
       await dispatch(fetchUser({ email, password })).unwrap();
       await dispatch(fetchProfile()).unwrap();
 
-      // 4. Si llegamos aquí, el login fue exitoso. Navega.
+      //  Si llegamos aquí, el login fue exitoso. Navega.
       navigate("/");
     } catch (rejectedValue) {
-      // 5. Si .unwrap() falla, el 'catch' se activa
+      //  Si .unwrap() falla, el 'catch' se activa
       // 'rejectedValue' es lo que enviaste con 'rejectWithValue'
       console.error("Error del fetch:", rejectedValue);
 

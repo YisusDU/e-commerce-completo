@@ -3,7 +3,7 @@ import { FETCH_ADDRESSES, ADD_ADDRESS } from "../../constants/actionTypes";
 import { ASYNC_STATUS } from "../../constants/asyncStatus";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-// --- THUNK 1: OBTENER DIRECCIONES (GET) ---
+// ---  OBTENER DIRECCIONES (GET) ---
 export const fetchAddresses = createAsyncThunk(
   FETCH_ADDRESSES,
   async (_, { rejectWithValue }) => {
@@ -19,9 +19,9 @@ export const fetchAddresses = createAsyncThunk(
   }
 );
 
-// --- THUNK 2: AÑADIR DIRECCIÓN (POST) ---
+// ---  AÑADIR DIRECCIÓN (POST) ---
 export const addAddress = createAsyncThunk(
-  ADD_ADDRESS, // 👈 Nuevo
+  ADD_ADDRESS,
   async (addressData, { rejectWithValue }) => {
     try {
       // 'addressData' es el objeto: { address_line_1, city, ... }
@@ -45,9 +45,7 @@ const addressSlice = createSlice({
     status: ASYNC_STATUS.IDLE,
     error: null,
   },
-  reducers: {
-    // (Puedes añadir reductores síncronos aquí si los necesitas)
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       // --- Casos para fetchAddresses (GET) ---
@@ -61,8 +59,6 @@ const addressSlice = createSlice({
       })
       .addCase(fetchAddresses.rejected, (state, action) => {
         state.status = ASYNC_STATUS.REJECTED;
-        // 2. ¡BUG CORREGIDO!
-        // Usas rejectWithValue, así que el error está en 'action.payload'
         state.error = action.payload;
       })
 
@@ -73,7 +69,7 @@ const addressSlice = createSlice({
       })
       .addCase(addAddress.fulfilled, (state, action) => {
         state.status = ASYNC_STATUS.FULFILLED;
-        // 3. Añade la nueva dirección a la lista existente en el estado
+        //  Añade la nueva dirección a la lista existente en el estado
         state.list.push(action.payload);
       })
       .addCase(addAddress.rejected, (state, action) => {

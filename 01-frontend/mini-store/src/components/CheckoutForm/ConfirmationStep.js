@@ -24,27 +24,27 @@ const ConfirmationStep = ({ selectedAddress, paymentMethod, prevStep }) => {
 
   const handleConfirm = async () => {
     setIsLoading(true);
-    // 1. Construye un array de 'items' que el backend pueda entender
+    // Construye un array de 'items' que el backend pueda entender
     const orderItems = cartItems.map((item) => ({
       product_id: item.id, // ID del producto
       quantity: item.quantity, // ¡La cantidad!
     }));
 
-    // 2. Construye el payload de la orden
+    // Construye el payload de la orden
     const orderPayload = {
-      shipping_address_id: selectedAddress.id, // 👈 Usa el ID
+      shipping_address_id: selectedAddress.id, //  Usa el ID
       items: orderItems,
       // ¡NO SE ENVÍA EL TOTAL! El backend lo calcula.
     };
 
     try {
-      // c) Despacha la orden y ESPERA (await)
+      // Despacha la orden y ESPERA (await)
       await dispatch(createOrder(orderPayload)).unwrap();
 
-      // d) ¡ÉXITO! Ahora borra el carrito y navega
+      //  ¡ÉXITO! Ahora borra el carrito y navega
       navigate("/post-checkout");
     } catch (error) {
-      // e) ¡FALLÓ! Muestra un error
+      //  ¡FALLÓ! Muestra un error
       console.error("Failed to create order:", error);
       alert("There was an error creating your order. Please try again.");
     } finally {
@@ -52,7 +52,7 @@ const ConfirmationStep = ({ selectedAddress, paymentMethod, prevStep }) => {
     }
   };
 
-  // 6. Si la dirección aún no se ha cargado (rara vez pasa, pero es seguro)
+  // Si la dirección aún no se ha cargado (rara vez pasa, pero es seguro)
   if (!selectedAddress) {
     return <p>Loading confirmation details...</p>;
   }
@@ -95,7 +95,7 @@ const ConfirmationStep = ({ selectedAddress, paymentMethod, prevStep }) => {
       <Button
         type="button"
         onClick={handleConfirm}
-        disabled={isLoading} // 👈 Deshabilita el botón mientras se crea
+        disabled={isLoading} //  Deshabilita el botón mientras se crea
       >
         {isLoading ? "Placing Order..." : "Confirm Order"}
       </Button>

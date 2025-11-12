@@ -19,19 +19,19 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // 3. Conéctate al 'addressSlice' de Redux
+  // Conéctate al 'addressSlice' de Redux
   const {
     list: addresses,
     status,
     error,
   } = useSelector((state) => state.address);
 
-  // 4. Estado local para manejar el componente
+  //  Estado local para manejar el componente
   const [selectedAddressId, setSelectedAddressId] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [formData, setFormData] = useState(initialFormState);
 
-  // 5. Carga las direcciones existentes cuando el componente se monta
+  // Carga las direcciones existentes cuando el componente se monta
   useEffect(() => {
     // Solo llama a la API si la lista no se ha cargado
     if (status === ASYNC_STATUS.IDLE) {
@@ -44,9 +44,9 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 6. Lógica para el botón "Siguiente"
+  // Lógica para el botón "Siguiente"
   const handleNext = async () => {
-    // ---- ESCENARIO 1: El usuario está creando una nueva dirección ----
+    //  El usuario está creando una nueva dirección ----
     if (showNewForm) {
       try {
         // Llama al thunk 'addAddress' y espera la respuesta
@@ -61,7 +61,7 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
         alert("Failed to save address. Please check all required fields.");
       }
     }
-    // ---- ESCENARIO 2: El usuario seleccionó una dirección existente ----
+    // El usuario seleccionó una dirección existente ----
     else if (selectedAddressId) {
       // Búscalo en la lista que ya tenemos
       const addressObject = addresses.find((a) => a.id === selectedAddressId);
@@ -70,13 +70,13 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
       setSelectedAddress(addressObject);
       nextStep();
     }
-    // ---- ESCENARIO 3: No se hizo nada ----
+    //  No se hizo nada ----
     else {
       alert("Please select or create a shipping address.");
     }
   };
 
-  // 7. Renderizado del componente
+  //  Renderizado del componente
   return (
     <AddressContainer>
       <h3>Shipping Address</h3>
@@ -88,7 +88,7 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
         </p>
       )}
 
-      {/* === SECCIÓN 1: LISTA DE DIRECCIONES (si no estamos en modo "crear") === */}
+      {/*  LISTA DE DIRECCIONES (si no estamos en modo "crear") === */}
       {!showNewForm &&
         addresses.length > 0 &&
         addresses.map((address) => (
@@ -118,7 +118,7 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
         <p>You have no saved addresses. Please add one.</p>
       )}
 
-      {/* === SECCIÓN 2: BOTÓN PARA MOSTRAR/OCULTAR EL FORMULARIO === */}
+      {/* BOTÓN PARA MOSTRAR/OCULTAR EL FORMULARIO === */}
       <Button
         type="button"
         onClick={() => {
@@ -126,12 +126,12 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
           setSelectedAddressId(null); // Limpia la selección de radio
         }}
         style={{ margin: "10px 0" }}
-        className="fit" // Re-usando tu estilo de botón "back"
+        className="fit" 
       >
         {showNewForm ? "Cancel and use existing" : " ➕ Add a new address"}
       </Button>
 
-      {/* === SECCIÓN 3: FORMULARIO DE NUEVA DIRECCIÓN (si showNewForm es true) === */}
+      {/*  FORMULARIO DE NUEVA DIRECCIÓN (si showNewForm es true) === */}
       {showNewForm && (
         <form>
           <Label>Full Name</Label>
@@ -182,7 +182,7 @@ const ShippingStep = ({ nextStep, prevStep, setSelectedAddress }) => {
         </form>
       )}
 
-      {/* === SECCIÓN 4: BOTONES DE NAVEGACIÓN === */}
+      {/*  BOTONES DE NAVEGACIÓN === */}
       <Navigation>
         <Button
           type="button"
